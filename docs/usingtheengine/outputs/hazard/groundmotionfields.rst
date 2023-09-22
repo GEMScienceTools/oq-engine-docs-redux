@@ -1,2 +1,0 @@
-Ground Motion Fields
-====================
