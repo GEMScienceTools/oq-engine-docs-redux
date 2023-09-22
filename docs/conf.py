@@ -14,8 +14,6 @@ release = 'v1.0.0'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = []
-
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
@@ -26,6 +24,7 @@ html_theme = 'pydata_sphinx_theme'
 html_static_path = ['_static']
 html_favicon = "_static/OQ-Logo-favicon.png"
 html_theme_options = {
+    "show_nav_level": 3,
     "navbar_start": ["navbar-logo"],
     "navbar_center": ["navbar-nav"],
     "navbar_end": ["theme-switcher", "navbar-icon-links"],
@@ -97,6 +96,7 @@ html_theme_options = {
         }
    ]
 }
+
 html_context = {
    "default_mode": "light"
 }
