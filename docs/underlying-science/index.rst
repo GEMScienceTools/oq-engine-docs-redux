@@ -2,6 +2,11 @@
 Underlying Science
 ==================
 
+.. toctree::
+   :maxdepth: 1
+
+   introduction
+
 .. _underlying-hazard-science:
 
 Underlying Hazard Science
@@ -10,6 +15,17 @@ Underlying Hazard Science
 A comprehensive and transparent description of the methodologies 
 adopted during the implementation of the hazard component of the 
 OpenQuake engine, an open-source hazard and risk calculation engine.
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Contents:
+
+   introduction
+   PSHA-with-OQ-engine
+   seismic-source-models
+   gmpes
+   logic-trees
+   calculations
 
 
 .. _underlying-risk-science:
@@ -26,19 +42,29 @@ source code for seismic hazard and physical risk calculations.
    :maxdepth: 1
    :caption: Contents:
 
-
-   introduction
-   PSHA-with-OQ-engine
-   seismic-source-models
-   gmpes
-   logic-trees
-   calculations
    physical-risk-inputs
    scenario-risk-calculator
    scenario-damage-calculator
    event-based-risk-calculator
    classical-psha-risk-calculator
    retrofitting-benefit-cost-ratio
+   bibliography
+   glossary
+   acronyms
+
+
+.. _appendices:
+
+Appendices
+----------
+
+This section contains the bibliography, the glossary and the acronyms
+used throughout the hazard and risk guide books.
+
+
+.. toctree::
+   :maxdepth: 1
+
    bibliography
    glossary
    acronyms
@@ -92,7 +118,7 @@ Acknowledgments
 ---------------
 
 A number of internal and external collaborators contributed to the
-development of the Open- Quake engine and their input is herewith
+development of the OpenQuake engine and their input is herewith
 acknowledged. As of version 1.0 (25th June 2013), these were the
 current and former GEM Model Facility Team members (Zurich,
 Switzerland, and Pavia, Italy):
