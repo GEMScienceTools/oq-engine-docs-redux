@@ -1,6 +1,6 @@
 .. _installing-the-openquake-engine:
 
-Installing the OpenQuake Engine
+Installing the OpenQuake engine
 ===============================
 
 The OpenQuake Engine runs on Linux, macOS and Windows; on laptops, workstations, standalone servers and multi-node 
@@ -91,3 +91,18 @@ Getting help
 
 If you need help or have questions/comments/feedback for us, you can subscribe to the OpenQuake users mailing list: 
 https://groups.google.com/g/openquake-users
+
+
+.. toctree::
+   :maxdepth: 1
+
+   universal
+   windows
+   ubuntu
+   ubuntu-nightly
+   development
+   cluster
+   rhel
+   server
+   tools
+   docker

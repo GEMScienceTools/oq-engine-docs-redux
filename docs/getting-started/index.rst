@@ -9,7 +9,7 @@ guided tutorials and exercises to help you learn how to use the software.
 .. toctree::
    :maxdepth: 2
 
-   installation-instructions
+   installation-instructions/index
    running-calculations/index
    demos-and-tutorials
    training-website
