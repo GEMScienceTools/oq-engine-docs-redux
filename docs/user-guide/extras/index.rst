@@ -11,6 +11,7 @@ publications that have been referenced in this documentation.
    :maxdepth: 1
 
    faq
+   reusing-hazard
    common-mistakes
    glossary-of-terms
    publications
