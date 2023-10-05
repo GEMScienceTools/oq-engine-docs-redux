@@ -6,11 +6,11 @@ OpenQuake engine, its capabilities and how to use it. It is divided into
 several sections, each of which is intended to provide a detailed description
 of a specific aspect of the engine. 
 
-The first section, :ref:`inputs`, describes the input models that are required
-to run various OpenQuake engine calculations and their file formats. 
+The first section, :ref:`workflows`, describes the various calculation workflows 
+that are curently supported by the OpenQuake engine. 
 
-The second section, :ref:`workflows`, describes the various calculation workflows 
-that are cuurently supported by the OpenQuake engine. 
+The second section, :ref:`inputs`, describes the input models that are required
+to run various OpenQuake engine calculations and their file formats. 
 
 The third section, :ref:`configuration-file`, describes the configuration file
 that is used to specify the calculation settings and we provide the list of
@@ -34,8 +34,8 @@ oq commands.
 .. toctree::
    :maxdepth: 1
 
-   inputs/index
    workflows/index
+   inputs/index
    configuration-file/index
    outputs/index
    special-features
