@@ -6,24 +6,24 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'OpenQuake Engine'
-copyright = '2023, GEM Foundation'
-author = 'GEM Foundation'
-release = 'v1.0.0'
+project = "OpenQuake Engine"
+copyright = "2023, GEM Foundation"
+author = "GEM Foundation"
+release = "v1.0.0"
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = []
 
-templates_path = ['_templates']
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+templates_path = ["_templates"]
+exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
-html_theme = 'pydata_sphinx_theme'
-html_static_path = ['_static']
+html_theme = "pydata_sphinx_theme"
+html_static_path = ["_static"]
 html_favicon = "_static/OQ-Logo circle_shade.png"
 html_theme_options = {
     "show_nav_level": 2,
@@ -33,9 +33,9 @@ html_theme_options = {
     "navbar_end": ["theme-switcher", "navbar-icon-links"],
     "navbar_persistent": ["search-button"],
     "logo": {
-           "image_light": "_static/OQ-Logo-Standard-RGB-72DPI-01-transparent.png",
-           "image_dark": "_static/OQ-Logo-Inverted-RGB-72DPI-01.jpg",
-        },
+        "image_light": "_static/OQ-Logo-Standard-RGB-72DPI-01-transparent.png",
+        "image_dark": "_static/OQ-Logo-Inverted-RGB-72DPI-01.jpg",
+    },
     "icon_links": [
         {
             # Label for this link
@@ -73,7 +73,7 @@ html_theme_options = {
             # URL where the link will redirect
             "url": "https://twitter.com/GEMwrld",  # required
             # Icon class (if "type": "fontawesome"), or path to local image (if "type": "local")
-            "icon": "_static/square-x-twitter.png",
+            "icon": "fa-brands fa-x-twitter",
             # The type of image to be used (see below for details)
             "type": "local",
         },
@@ -96,16 +96,14 @@ html_theme_options = {
             "icon": "fa-brands fa-square-facebook",
             # The type of image to be used (see below for details)
             "type": "fontawesome",
-        }
-   ]
+        },
+    ],
 }
-html_context = {
-   "default_mode": "light"
-}
+html_context = {"default_mode": "light"}
 extensions = [
-    'sphinx_copybutton',
-    'sphinx_design',
-    'sphinx.ext.autosectionlabel',
-    'sphinxcontrib.images',
-    'sphinxcontrib.youtube'
+    "sphinx_copybutton",
+    "sphinx_design",
+    "sphinx.ext.autosectionlabel",
+    "sphinxcontrib.images",
+    "sphinxcontrib.youtube",
 ]
