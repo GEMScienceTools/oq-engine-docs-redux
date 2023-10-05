@@ -1,11 +1,11 @@
-The Basics
-==========
+Running Calculations
+====================
 
-
+This section describes how to run OpenQuake engine calculations using 
+the command line, the OpenQuake Web UI, or the OpenQuake QGIS plugin.
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
 
    command-line
    web-ui
