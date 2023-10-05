@@ -69,13 +69,13 @@ html_theme_options = {
         },
         {
             # Label for this link
-            "name": "Twitter",
+            "name": "X/Twitter",
             # URL where the link will redirect
-            "url": "https://twitter.com/GEMwrld",  # required
+            "url": "https://x.com/GEMwrld",  # required
             # Icon class (if "type": "fontawesome"), or path to local image (if "type": "local")
-            "icon": "fa-brands fa-x-twitter",
+            "icon": "fa-brands fa-twitter",
             # The type of image to be used (see below for details)
-            "type": "local",
+            "type": "fontawesome",
         },
         {
             # Label for this link

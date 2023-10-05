@@ -1,8 +1,3 @@
-.. GEM_GSoD2023_Documentation documentation master file, created by
-   sphinx-quickstart on Mon Jul 17 12:00:30 2023.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
 OpenQuake Engine Documentation
 ==============================
 
@@ -59,8 +54,8 @@ An introduction video for the OpenQuake engine is presented below:
 Contacts
 --------
 
-- Support forum: https://groups.google.com/forum/#!forum/openquake-users
-- Twitter: @gem_devs
+- Support forum: https://groups.google.com/g/openquake-users
+- X/Twitter: https://x.com/gem_devs
 - Email: info@openquake.org
 
 .. toctree::
