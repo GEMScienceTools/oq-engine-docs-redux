@@ -6,10 +6,15 @@
 OpenQuake Engine Documentation
 ==============================
 
-.. image:: C:/Users/Asus/Desktop/PhD_IUSS/Extra/GEM_Documentation_GSoD/Logos_and_Fonts/OQ_Logo/Standard/OQ-Logo-Standard-CMYK-300DPI-01.jpg
+.. image:: _static/OQ-Logo-Standard-CMYK-300DPI-01.jpg
 
-The **OpenQuake Engine** is an open source application that allows users to compute seismic hazard and seismic risk 
-of earthquakes on a global scale. DOI: `10.13117/openquake.engine <https://github.com/gem/oq-engine/>`_
+OpenQuake engine is the seismic hazard and risk calculation software developed by the GEM 
+Foundation. By following current standards in software developments like test-driven development 
+and continuous integration, the OpenQuake engine aims at becoming an open, and community-driven 
+tool for seismic hazard and risk analysis.
+
+The source code of the OpenQuake engine is available on a public web-based repository at the 
+following address: gem/oq-engine.
 
 General overview
 ----------------
@@ -26,42 +31,30 @@ decision-making tools via the data, methods and standards that are being develop
 	:octicon:`rocket;5em;sd-text-info`
 	^^^
 
-    .. grid-item-card::  :ref:`Calculators`
+    .. grid-item-card::  :ref:`User Guide`
 	:text-align: center
 
-	:octicon:`codespaces;5em;sd-text-info`
+	:octicon:`book;5em;sd-text-info`
 	^^^
 
 .. grid:: 2
 
-    .. grid-item-card::  :ref:`Using the Engine`
+    .. grid-item-card::  :ref:`API Reference`
 	:text-align: center
 
-	:octicon:`gear;5em;sd-text-info`
+	:octicon:`code-square;5em;sd-text-info`
 	^^^
 
-    .. grid-item-card::  :ref:`Background Information`
+    .. grid-item-card::  :ref:`Underlying Science`
 	:text-align: center
 
 	:octicon:`archive;5em;sd-text-info`
 	^^^
 
-Current Long Term Support (LTS) release - for users wanting stability
-----------------------------------------------------------------------
+An introduction video for the OpenQuake engine is presented below:
 
-Current LTS version is the **OpenQuake Engine 3.16** 'Angela':
-
-The code name for version 3.16 is **Angela**, in memory of the Italian science journalist Piero Angela.
-
-Latest release - for users needing the latest features
--------------------------------------------------------
-
-Latest stable version is the **OpenQuake Engine 3.17**.
-
-License
--------
-
-The OpenQuake Engine is released under the GNU Affero Public License 3.
+.. youtube:: DDDzNDrf4bo
+   :align: center
 
 Contacts
 --------
@@ -73,8 +66,9 @@ Contacts
 .. toctree::
    :hidden:
 
-   gettingstarted/index
-   calculators/index
-   usingtheengine/index
-   backgroundinformation/index
-   releasenotes/index
+   getting-started/index
+   user-guide/index
+   api-reference/index
+   underlying-science/index
+   release-notes/index
+   contributing/index
