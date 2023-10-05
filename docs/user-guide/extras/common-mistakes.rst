@@ -1,5 +1,5 @@
-Common Mistakes: bad configuration parameters
-=============================================
+Bad configuration parameters
+============================
 
 By far, the most common source of problems with the engine is the choice of parameters in the *job.ini* file. It is very 
 easy to make mistakes, because users typically copy the parameters from the OpenQuake engine demos. However, the demos are meant 
