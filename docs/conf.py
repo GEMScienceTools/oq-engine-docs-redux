@@ -78,6 +78,7 @@ html_theme_options = {
 }
 html_context = {"default_mode": "light"}
 extensions = [
+    "myst_parser",
     "sphinx_copybutton",
     "sphinx_design",
     "sphinx.ext.autosectionlabel",
