@@ -28,6 +28,7 @@ html_favicon = "_static/OQ-Logo circle_shade.png"
 html_theme_options = {
     "show_nav_level": 2,
     "content_footer_items": ["last-updated"],
+    "header_links_before_dropdown": 6,
     "navbar_start": ["navbar-logo"],
     "navbar_center": ["navbar-nav"],
     "navbar_end": ["theme-switcher", "navbar-icon-links"],
@@ -38,63 +39,39 @@ html_theme_options = {
     },
     "icon_links": [
         {
-            # Label for this link
             "name": "GEM",
-            # URL where the link will redirect
-            "url": "https://www.globalquakemodel.org/gem",  # requiredx"
-            # Icon class (if "type": "fontawesome"), or path to local image (if "type": "local")
+            "url": "https://www.globalquakemodel.org",
             "icon": "_static/GEM-LOGO-Plain-RGB-72DPI-01.png",
-            # The type of image to be used (see below for details)
             "type": "local",
         },
         {
-            # Label for this link
             "name": "GitHub",
-            # URL where the link will redirect
-            "url": "https://github.com/gem/oq-engine",  # required
-            # Icon class (if "type": "fontawesome"), or path to local image (if "type": "local")
+            "url": "https://github.com/gem/oq-engine",
             "icon": "fa-brands fa-square-github",
-            # The type of image to be used (see below for details)
             "type": "fontawesome",
         },
         {
-            # Label for this link
             "name": "Linkedin",
-            # URL where the link will redirect
-            "url": "https://it.linkedin.com/company/gem-foundation",  # required
-            # Icon class (if "type": "fontawesome"), or path to local image (if "type": "local")
+            "url": "https://linkedin.com/company/gem-foundation",
             "icon": "fa-brands fa-linkedin",
-            # The type of image to be used (see below for details)
             "type": "fontawesome",
         },
         {
-            # Label for this link
             "name": "X/Twitter",
-            # URL where the link will redirect
-            "url": "https://x.com/GEMwrld",  # required
-            # Icon class (if "type": "fontawesome"), or path to local image (if "type": "local")
-            "icon": "fa-brands fa-twitter",
-            # The type of image to be used (see below for details)
+            "url": "https://x.com/GEMwrld",
+            "icon": "fa-brands fa-square-twitter",
             "type": "fontawesome",
         },
         {
-            # Label for this link
-            "name": "Youtube",
-            # URL where the link will redirect
-            "url": "https://www.youtube.com/channel/UCfvGcHtZYk_kQ_mqz3AYQYQ",  # required
-            # Icon class (if "type": "fontawesome"), or path to local image (if "type": "local")
+            "name": "YouTube",
+            "url": "https://youtube.com/@gemglobalearthquakemodel3652",
             "icon": "fa-brands fa-square-youtube",
-            # The type of image to be used (see below for details)
             "type": "fontawesome",
         },
         {
-            # Label for this link
             "name": "Facebook",
-            # URL where the link will redirect
-            "url": "https://www.facebook.com/GEMwrld/",  # required
-            # Icon class (if "type": "fontawesome"), or path to local image (if "type": "local")
+            "url": "https://fb.com/GEMwrld/",
             "icon": "fa-brands fa-square-facebook",
-            # The type of image to be used (see below for details)
             "type": "fontawesome",
         },
     ],

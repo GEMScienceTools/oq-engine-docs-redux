@@ -2,6 +2,9 @@ OpenQuake Engine Documentation
 ==============================
 
 .. image:: _static/OQ-Logo-Standard-CMYK-300DPI-01.jpg
+  :width: 400
+  :alt: OpenQuake Engine Logo
+  :align: center
 
 OpenQuake engine is the seismic hazard and risk calculation software developed by the GEM 
 Foundation. By following current standards in software developments like test-driven development 
@@ -16,7 +19,8 @@ General overview
 
 The OpenQuake Engine software provides calculation and assessment of seismic hazard, risk and 
 decision-making tools via the data, methods and standards that are being developed by 
-**GEM** (Global Earthquake Model) and its collaborators.
+`Global Earthquake Model (GEM) Foundation <https://www.globalquakemodel.org/>`_ 
+and its collaborators.
 
 .. grid:: 2
 
@@ -37,7 +41,7 @@ decision-making tools via the data, methods and standards that are being develop
     .. grid-item-card::  :ref:`API Reference`
 	:text-align: center
 
-	:octicon:`code-square;5em;sd-text-info`
+	:octicon:`codescan;5em;sd-text-info`
 	^^^
 
     .. grid-item-card::  :ref:`Underlying Science`
@@ -46,7 +50,26 @@ decision-making tools via the data, methods and standards that are being develop
 	:octicon:`archive;5em;sd-text-info`
 	^^^
 
-An introduction video for the OpenQuake engine is presented below:
+.. grid:: 2
+
+    .. grid-item-card::  :ref:`Release Notes`
+	:text-align: center
+
+	:octicon:`tag;5em;sd-text-info`
+	^^^
+
+    .. grid-item-card::  :ref:`Contributing`
+	:text-align: center
+
+	:octicon:`people;5em;sd-text-info`
+	^^^
+
+
+Introductory video
+------------------
+
+The video below provides a basic introduction to the OpenQuake engine
+and its capabilities:
 
 .. youtube:: DDDzNDrf4bo
    :align: center

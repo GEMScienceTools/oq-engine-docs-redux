@@ -1,7 +1,5 @@
-Contributing to OpenQuake engine
-================================
-
-
+Contributing
+============
 
 .. toctree::
    :maxdepth: 2
