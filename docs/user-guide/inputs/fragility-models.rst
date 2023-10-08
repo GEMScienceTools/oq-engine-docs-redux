@@ -11,20 +11,20 @@ damage, states. The fragility functions can be defined using either a discrete o
 Model* file can include a mix of both types of fragility functions.
 
 For discrete fragility functions, sets of probabilities of exceedance (one set per limit state) are defined for a list of 
-intensity measure levels, as illustrated in :ref:`Fig. 3.10 <Fig. 3.10>`.
+intensity measure levels, as illustrated in :ref:`the figure below <discrete-fragility>`.
 
-.. _Fig. 3.10:
+.. _discrete-fragility:
 .. figure:: _images/fragility-discrete.png
 
-   Fig. 3.10 Graphical representation of a discrete fragility model
+   Graphical representation of a discrete fragility model
 
 The fragility functions can also be defined as continuous functions, through the use of cumulative lognormal distribution 
-functions. In :ref:`Fig. 3.11 <Fig. 3.11>`, a continuous *Fragility Model* is presented.
+functions. In :ref:`the next figure <fragility-continuous>`, a continuous *Fragility Model* is presented.
 
-.. _Fig. 3.11:
+.. _fragility-continuous:
 .. figure:: _images/fragility-continuous.png
 
-   Fig. 3.11 Graphical representation of a continuous fragility model
+   Graphical representation of a continuous fragility model
 
 An example *Fragility Model* comprising one discrete Fragility Function and one continuous *Fragility Function* is shown 
 in the listing below.::

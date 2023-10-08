@@ -4,13 +4,13 @@ The OpenQuake Engine stable tree is available in the form of *deb* binary packag
 - **Ubuntu 20.04** LTS (Focal)
 - **Ubuntu 18.04** LTS (Bionic)
 
-Packages *may* work on Debian,  but this setup is not supported by GEM. See the **[FAQ](../faq.md#unsupported-operating-systems)**.
+Packages *may* work on Debian,  but this setup is not supported by GEM. See the **[FAQ](unsupported-operating-systems)**.
 
 The software and its libraries will be installed under `/opt/openquake`. Data will be stored under `/var/lib/openquake`.
 
 ## Install packages from the OpenQuake repository
 
-If you want to upgrade an existing installation see **[upgrading](../upgrading/ubuntu.md)**.
+If you want to upgrade an existing installation see **upgrading**.
 
 The following commands add the **official stable builds** package repository:
 ```
@@ -18,12 +18,13 @@ sudo add-apt-repository -y ppa:openquake/ppa
 sudo apt update
 ```
 
-If you want to install a **nightly build** please read the guide about installing the **[nightly build packages on Ubuntu](ubuntu-nightly.md)**.
+If you want to install a **nightly build** please read the guide about installing the **[nightly build packages on Ubuntu](ubuntu-nightly)**.
 
 Then to install the OpenQuake Engine and its libraries run
 ```bash
 sudo apt install python3-oq-engine
 ```
+(configure-the-system-services)=
 
 ## Configure the system services
 
@@ -44,11 +45,11 @@ sudo systemctl status openquake-dbserver openquake-webui
 
 ## Run the OpenQuake Engine
 
-Continue on [How to run the OpenQuake Engine](../running/unix.md)
+Continue on [How to run the OpenQuake Engine](unix)
 
 ## Test the installation
 
-To run the OpenQuake Engine tests see the **[testing](../testing.md)** page.
+To run the OpenQuake Engine tests see the **[testing](https://github.com/gem/oq-engine/blob/master/doc/testing.md)** page.
 
 ## Uninstall the OpenQuake Engine
 

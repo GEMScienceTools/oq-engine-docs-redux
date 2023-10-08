@@ -30,8 +30,7 @@ Overview of the OpenQuake engine
 --------------------------------
 
 The OpenQuake engine is an open-source hazard and risk calculation engine
-developed by the `Global <http://globalquakemodel.org/>`__
-`Earthquake Model (GEM) <http://globalquakemodel.org/>`__ initiative.
+developed by the `Global Earthquake Model (GEM) <http://globalquakemodel.org/>`__ initiative.
 The OpenQuake engine is part of OpenQuake, a suite of open-source software
 packages developed by `GEM <http://globalquakemodel.org/>`__ (Figure
 1.1), which comprises the OpenQuake engine, the
@@ -50,11 +49,11 @@ operative system currently supported is Ubuntu Linux (additional
 information on the supported version and on the installation
 procedure can be found on the GEM area on github, accessible at the
 following link:
-`https://github.com/gem/oq-engine). <https://github.com/gem/oq-engine>`__
+`https://github.com/gem/oq-engine. <https://github.com/gem/oq-engine>`__
 
 .. figure:: _images/schematic_oq_suite.jpeg
 
-   **Figure 1.1** – *A schematic describing the OpenQuake suite.*
+   *A schematic describing the OpenQuake suite.*
 
 Structure of the OpenQuake engine
 *********************************
@@ -114,8 +113,7 @@ The OpenQuake engine development process is based on a number of open-source
 tools, which guarantee a clear and transparent process. For example,
 each new feature improvement or bug fix before being implemented is
 described in a bug tracking system (in our case,
-`Launchpad <https://launchpad.net/>`__ - see Table
-1.1). Bug tracking systems such as Launchpad keep
+`Launchpad <https://launchpad.net/>`__). Bug tracking systems such as Launchpad keep
 a log of bugs and errors identified by users of the software, in addition to 
 requests for new features.
 
@@ -137,8 +135,8 @@ Main services and websites related to the OpenQuake engine
 The tools used to maintain and make publicly available the OpenQuake engine
 repository and to manage the continual improvement and enhancement
 process are `git <http://git-scm.com/>`__ and a git-based repository
-hosting service called `GitHub <http://github.com/>`__ (see Table
-1.1). This process ensures comprehensive version
+hosting service called `GitHub <http://github.com/>`__. 
+This process ensures comprehensive version
 control, facilitating the tracking of feature implementation and bug
 fixing. It also ensures that previous versions of the software can be
 easily retrieved. When a developer commits new code to the main

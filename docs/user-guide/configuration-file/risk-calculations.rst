@@ -262,9 +262,9 @@ Ground Motion Fields.::
 - ``gmfs_file``: a parameter used to define the path to the Ground Motion Fields file in the Natural hazards’ Risk Markup Language schema. This file must define Ground Motion Fields for all of the intensity measure types used in the Fragility Model.
 
 The listing below shows an example of a Ground Motion Fields file in the Natural hazards’ Risk Markup Language schema 
-and **Table 2.4 (REVISIT)** shows an example of a Ground Motion Fields file in the csv format. If the Ground Motion Fields file is 
+and :ref:`this table <gmf-csv>` shows an example of a Ground Motion Fields file in the csv format. If the Ground Motion Fields file is 
 provided in the csv format, an additional csv file listing the site ids must be provided using the parameter ``sites_csv``. 
-See **Table 2.5 (REVISIT)** for an example of the sites csv file, which provides the association between the site ids in the 
+See :ref:`this table <sites-csv>` for an example of the sites csv file, which provides the association between the site ids in the 
 Ground Motion Fields csv file with their latitude and longitude coordinates.::
 
 	[general]

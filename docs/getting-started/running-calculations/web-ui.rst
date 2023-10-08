@@ -9,8 +9,8 @@ and a web GUI, the WebUI. It's built on top of `Django <https://www.djangoprojec
 
 The OpenQuake engine server is used to submit new jobs, watch calculation progress, retrieve results and more.
 
-The `API document **reference link will be changed** <https://github.com/gem/oq-engine/blob/master/doc/web-api.md>`_ provides the full list of available endpoints. Several authentication mechanisms are supported and can 
-be enabled with a `custom configuration <https://github.com/gem/oq-engine/blob/master/doc/installing/server.md>`_.
+The :ref:`API document <rest-api>` provides the full list of available endpoints. Several authentication mechanisms are supported and can 
+be enabled with a :ref:`custom configuration <server>`.
 
 The OpenQuake engine WebUI does not require any special software on the client side except for a browser. Supported 
 browsers are:
@@ -43,7 +43,7 @@ Linux from packages
 *******************
 
 A ``systemd`` service will take care of the OpenQuake engine server, starting it at boot. Please refer to 
-`Configure the systemd services page <https://github.com/gem/oq-engine/blob/master/doc/installing/rhel.md#configure-the-system-services>`_.
+:ref:`Configure the systemd services page <rhel>`.
 
 Using the OpenQuake engine WebUI
 --------------------------------

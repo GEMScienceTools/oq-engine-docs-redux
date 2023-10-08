@@ -1,8 +1,10 @@
+(development)=
+
 # Installing the OpenQuake Engine for development
 
 To develop with the OpenQuake Engine and Hazardlib an installation
 from sources must be performed. The easiest way it to use the
-[universal installer](universal.md). The guide here is for people
+[universal installer](universal_installer). The guide here is for people
 wanting to do everything manually.
 
 ## Prerequisites
@@ -102,7 +104,7 @@ authkey = changeme  |  authkey = changeme
 
 ## Running the tests
 
-To run the OpenQuake Engine tests see the **[testing](../testing.md)** page.
+To run the OpenQuake Engine tests see the **[testing](https://github.com/gem/oq-engine/blob/master/doc/testing.md)** page.
 
 ### Sync the source code with remote
 

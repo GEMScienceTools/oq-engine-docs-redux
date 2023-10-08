@@ -1,10 +1,12 @@
+(ubuntu-nightly)=
+
 # Installing the OpenQuake Engine nightly builds on Ubuntu Linux
 
 The OpenQuake Engine **nightly builds** are available in the form of *deb* binary packages for the following Ubuntu releases:
 - **Ubuntu 20.04** LTS (Focal)
 - **Ubuntu 18.04** LTS (Bionic)
 
-Packages *may* work on Debian, but this setup is not supported by GEM. See the **[FAQ](../faq.md#unsupported-operating-systems)**.
+Packages *may* work on Debian, but this setup is not supported by GEM. See the **[FAQ](unsupported-operating-systems)**.
 
 The software and its libraries will be installed under `/opt/openquake`. Data will be stored under `/var/lib/openquake`.
 
@@ -23,7 +25,7 @@ sudo apt remove --purge python-oq-.* python3-oq-.*
 sudo apt install python3-oq-engine
 ```
 
-Now you can follow the [standard installing procedures](./ubuntu.md#configure-the-system-services)
+Now you can follow the [standard installing procedures](configure-the-system-services)
 
 ***
 

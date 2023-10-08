@@ -1,3 +1,5 @@
+.. _outputs:
+
 Outputs
 =======
 
@@ -7,6 +9,7 @@ Outputs
    :maxdepth: 2
    :caption: Contents:
 
+   exporting-hazard-results
    classical-psha-outputs
    scenario-analysis-outputs
    event-based-psha-outputs

@@ -9,7 +9,7 @@ of a specific aspect of the engine.
 The first section, :ref:`workflows`, describes the various calculation workflows 
 that are curently supported by the OpenQuake engine. 
 
-The second section, :ref:`inputs`, describes the input models that are required
+The second section, :ref:`input-models`, describes the input models that are required
 to run various OpenQuake engine calculations and their file formats. 
 
 The third section, :ref:`configuration-file`, describes the configuration file

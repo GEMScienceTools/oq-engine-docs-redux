@@ -1,3 +1,5 @@
+(cluster)=
+
 # Running the OpenQuake Engine on multiple nodes (cluster/zmq)
 
 This configuration is supported only by Linux.
@@ -6,7 +8,7 @@ This configuration is supported only by Linux.
 
 The nodes must all be able to communicate with the OpenQuake Engine *DbServer*.
 Both services run on a single "master" node.
-Running OpenQuake on an *MPI cluster* is currently not supported. See the [FAQ](../faq.md#mpi-support) for more information.
+Running OpenQuake on an *MPI cluster* is currently not supported. See the [FAQ](mpi-support) for more information.
 
 ## Pre-requisites
 
@@ -173,4 +175,4 @@ two workers 7 cores are running each).
 
 ## Running calculations
 
-Jobs can be submitted through the master node using the `oq engine` command line interface, the API or the WebUI if active. See the documentation about [how to run a calculation](../running/unix.md) or about how to use the [WebUI](../running/server.md)
+Jobs can be submitted through the master node using the `oq engine` command line interface, the API or the WebUI if active. See the documentation about [how to run a calculation](unix) or about how to use the [WebUI](web-ui)

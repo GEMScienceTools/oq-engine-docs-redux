@@ -116,7 +116,7 @@ show a plot displaying the hazard curve without *pointsource_distance* (with ID=
 
 .. image:: _images/mp-demo.png
 
-The ``pointsource_distance`` is also crucial when using the **point source gridding (REVISIT FOR CROSS REFERENCE)** 
+The ``pointsource_distance`` is also crucial when using the :ref:`point source gridding <point-source-gridding>`
 approximation: then it can be used to speedup calculations even when the nodal plane and hypocenter distributions are 
 trivial and no speedup would be expected.
 

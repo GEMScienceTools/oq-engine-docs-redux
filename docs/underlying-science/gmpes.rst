@@ -63,12 +63,11 @@ important predictor variables supported by the OpenQuake engine (for general
 a summary, see Akkar et al., 2013).
 
 The main predictor variables are organized into three categories as
-indicated in Table 4.1 variables describing the
+indicated in the table below variables describing the
 rupture properties, variables describing the rupture-site path and
 variables used to characterize the site conditions.
 
-   **Table 4.1** – *Principal predictor variables supported by the
-   OpenQuake engine and corresponding groups.*
+*Principal predictor variables supported by the OpenQuake engine and corresponding groups.*
 
 +-----------------------+----------------------------------------------+
 |    **Group**          |    **Variables**                             |
@@ -113,8 +112,8 @@ typologies supported by the OpenQuake engine.
 
 The OpenQuake engine supports almost all the rupture-site distance
 metrics used by the most recent and complex ground shaking intensity
-models published in the scientific literature (see Table
-4.2 for a comprehensive list). The calculation of
+models published in the scientific literature (see the table below 
+for a comprehensive list). The calculation of
 distances within the hazard component of the OpenQuake engine is performed
 by assuming a spherical Earth with a radius of 6371.0 km.
 
@@ -145,7 +144,7 @@ Local site conditions and their effects on the ground-motion are
 routinely incorporated into ground shaking intensity models by means
 of a scalar quantity corresponding to the time-
 
-   **Table 4.2** – *Rupture-site distances supported by the OpenQuake engine.*
+*Rupture-site distances supported by the OpenQuake engine.*
 
 +-----------------------+----------------------+--------------------------------------+
 |    **Distance         |                      |    **Description**                   |
@@ -211,12 +210,12 @@ Supported intensity measure types
 *********************************
 
 Each GSIM implemented in the OpenQuake engine provides a list of the
-supported Intensity Measure Types(IMTs). Table 4.3 
+supported Intensity Measure Types(IMTs). The first table below 
 contains a comprehensive list of possible alternatives. The
 definitions of the ground-motion component supported are instead listed in 
-Table 4.4.
+the second table below.
 
-   **Table 4.3** – *Principal intensity measure types supported.*
+*Principal intensity measure types supported.*
 
 +--------------+-----------------------------------+-------------------+
 |              |    **Description**                |    **Unit of      |
@@ -243,7 +242,7 @@ Table 4.4.
 +--------------+-----------------------------------+-------------------+
 
 
-   **Table 4.4** – *Principal ground-motion components supported*
+*Principal ground-motion components supported*
 
 +----------------------------+-----------------------------------------+
 |    **Component**           |    **Description**                      |
@@ -310,13 +309,13 @@ the OpenQuake engine. The ground motion is computed for a site at a :math:`R_{jb
 distance of about 33 km with :math:`V_{s,30}` equal to 760 m/s from a
 rupture with a strike of dip of 45 degrees toward south for two
 different values of rake (i.e. rupture mechanism). The upper panel of
-Figure 4.1 shows the position of the site and the
+the figure below shows the position of the site and the
 rupture. Note that the three GSIMs selected use different
 rupture-site metrics.
 
 .. figure:: _images/scaling_gmpe.png
 
-   **Figure 4.1** – *(upper panel) Simple schematic with the surface
+   *(upper panel) Simple schematic with the surface
    projection of the rupture and the site (red square) used in this
    example. The green dots show the position of the top of rupture.
    (lower panels) Scaling of Peak Ground Acceleration as a function of
@@ -336,7 +335,7 @@ The standard process adopted for the implementation in the OpenQuake engine
 of a ground shaking intensity model requires a set of verification
 tables each one containing values of ground-motion (or standard
 deviation) computed using a large number of combinations of the
-predictor variables. Table 4.5 shows a simplified
+predictor variables. The table below shows a simplified
 example of a GSIM verification table; it consists of: a header line
 with (standard) names for each column and a number of lines each one
 containing values of the predictor variables plus the computed values
@@ -344,8 +343,7 @@ of ground-motion intensity or standard deviation. Examples of
 verification tables are available in the `OpenQuake-hazardlib Github
 repository <https://github.com/gem/oq-hazardlib/tree/master/openquake/hazardlib/tests/gsim/data>`__.
 
-   **Table 4.5** – *Schematic of a GSIM verification table used in the
-   OpenQuake engine.*
+*Schematic of a GSIM verification table used in the OpenQuake engine.*
 
 +-------------------+-------------------+-------------------+-------------------+-------------------+------+
 |         M         |         R         |  :math:`V_{s,30}` |   :math:`IMT_1`   |   :math:`IMT_2`   |  ... |

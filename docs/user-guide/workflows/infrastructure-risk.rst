@@ -23,8 +23,9 @@ Calculation Steps
   - Efficiency Loss (EL)
 
 In summary, for the computation of infrastructure risk at connectivity level in OpenQuake engine, the input requirements and 
-the outputs obtained are shown in the next figure.
+the outputs obtained are shown in :ref:`the next figure <infrastructure-risk-calc>`.
 
+.. _infrastructure-risk-calc:
 .. figure:: _images/infrastructure-io.png
 
   Input models required, and output obtained in OpenQuake for infrastructure risk assessment at connectivity level

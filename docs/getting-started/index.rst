@@ -11,5 +11,5 @@ guided tutorials and exercises to help you learn how to use the software.
 
    installation-instructions/index
    running-calculations/index
-   demos-and-tutorials/index
+   demos-tutorials/index
    training-website

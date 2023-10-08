@@ -368,14 +368,14 @@ which the engine will use to add the between and within standard deviations to t
 
 **Station data csv file** This csv file contains the observed intensity values available from ground motion recordings 
 and macroseismic intensity data. One or multiple intensity measure types can be indicated for all observations. An 
-example of such a file is shown below in :ref:`Table 3.1 <Table 3.1>`.
+example of such a file is shown below in :ref:`the table below <example-station-data-csv>`.
 
 When conditiong the ground motion fields to station data, all of the site parameters required by the GMMs will also need 
 to be provided for the set of sites in the station_data_file. This is specified in the configuration file by including 
 in the ``site_model_file`` section a ``site_model_stations.csv`` file.
 
-.. _Table 3.1:
-.. table:: Table 3.1 Example of station data csv file
+.. _example-station-data-csv:
+.. table:: Example of station data csv file
 
    +------------------+------------------+---------------+--------------+------------------+---------------+------------------+-------------------+----------------------+-------------------+----------------------+
    |  **STATION ID**  | **STATION_NAME** | **LONGITUDE** | **LATITUDE** | **STATION_TYPE** | **PGA_VALUE** | **PGA_LN_SIGMA** | **SA(0.3)_VALUE** | **SA(0.3)_LN_SIGMA** | **SA(1.0)_VALUE** | **SA(1.0)_LN_SIGMA** |

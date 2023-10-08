@@ -38,7 +38,7 @@ Silva, 2008) to investigate the potential
 dependence of the results accuracy on the ground motion model. From
 the hazard curves we extract PGA values corresponding to 10 % in 50
 years. Results for four discretization levels (20, 10, 5, and 2.5 km)
-are shown in Figure 6.1.
+are shown in the figure below.
 
 When using D = 20 km, the hazard map values show strong fluctuations
 (where the highest are for the Boore and Atkinson,
@@ -49,7 +49,7 @@ the same values.
 
 .. figure:: _images/area_source_discretization.png
 
-   **Figure 6.1** – *The effect of the area source discretization step
+   *The effect of the area source discretization step
    :math:`(\Delta)` on hazard results.*
 
 The effect of dip and rake angles
@@ -66,8 +66,8 @@ To investigate the potential dependence on the source seismic
 activity level, we compute hazard maps for area sources having
 different Gutenberg-Richter a values :math:`a_{GR}` equal to 3, 4 and 5,
 corresponding to annual occurrence rates above M = 5 of 0.01, 0.1
-and 1, respectively. Results are shown in Figure
-6.2. Sensitivity of rupture dip and faulting
+and 1, respectively. Results are shown in the figure below. 
+Sensitivity of rupture dip and faulting
 style clearly depends on the source activity level and on the GMPE
 model. Independently of the GMPE, the highest absolute difference in
 PGA is for the highest :math:`a_{GR}`. Among the different GMPE models,
@@ -86,7 +86,7 @@ source-sites configuration as in the previous analysis, and vertical
 strike-slip ruptures with single strike (0\ :sup:`◦`), we compute
 hazard results considering two :math:`a_{GR}` values (4 and 5). We use the
 GMPE model of Campbell and Bozorgnia (2008). 
-Figure 6.3 shows the computed values along the
+the second figure below shows the computed values along the
 site profile for different return periods (RP) and :math:`a_{GR}` values.
 The effect of the distribution of hypocentral values becomes visible
 when considering long return periods (50000 years) and increases with
@@ -94,17 +94,17 @@ increasing :math:`a_{GR}`.
 
 .. figure:: _images/dip_rake_angles.png
 
-   **Figure 6.2** – *The effect of dip and rake angles on hazard
+   *The effect of dip and rake angles on hazard
    results.*
 
 .. figure:: _images/hypocentral_depth.png
 
-   **Figure 6.3** – *The effect of hypocentral depth on hazard map
+   *The effect of hypocentral depth on hazard map
    calculation.*
 
 .. figure:: _images/monte_carlo.png   
 
-   **Figure 6.4** – *Mean and quantile hazard
+   *Mean and quantile hazard
    curves obtained from Monte Carlo sampling of logic tree.*
 
 Classical PSHA with complex logic tree
@@ -132,8 +132,8 @@ the number of sources. In the present case :math:`N_{GR}=5`, :math:`N_{MaxMag}=3
 the total number of paths in the source model logic tree.
 
 The OpenQuake engine allows random sampling the logic tree to avoid
-calculating hazard results for all possible logic tree paths. Figure
-6.4 presents mean and quantile hazard curves as
+calculating hazard results for all possible logic tree paths. The last figure above
+presents mean and quantile hazard curves as
 obtained from different numbers of samples (10, 100, 1000, 5000). It
 can be seen how, by increasing the number of samples, results tend to
 converge to similar values. Indeed, curves obtained from 1000 and
@@ -147,7 +147,7 @@ tolerance level.
 
 .. figure:: _images/stochastic_event_set_seattle.png
 
-   **Figure 6.5** – *Stochastic event set for a region surrounding
+   *Stochastic event set for a region surrounding
    Seattle (U.S.) for a duration of 10000 years.*
 
 Convergence between Classical and Event-based PSHA
@@ -159,8 +159,8 @@ classical results. We present here an event-based calculation for a
 location corresponding to the city of Seattle. The calculation is
 done using the 2008 seismic hazard model for conterminous U.S.
 (Petersen et al., 2008). A stochastic event set
-covering a period of 10000 years is generated (Figure
-6.5). The event set contains earthquake ruptures
+covering a period of 10000 years is generated (the figure above). 
+The event set contains earthquake ruptures
 within a radius of 200 km from the city of Seattle (longitude =
 122.3W, latitude = 47.6N) including large subduction interface
 earthquakes generated in the Cascadia region, as well as deep
@@ -169,15 +169,15 @@ ground shaking values are simulated in the city of Seattle
 (considering the full set of GMPEs prescribed by the model). From
 ground motion values, the mean hazard curve (probability of
 exceedance in 50 years) for PGA is computed, and compared against the
-one obtained using the classical approach (Figure
-6.6). The curve obtained can reliably reproduce
+one obtained using the classical approach (the figure below). 
+The curve obtained can reliably reproduce
 the probabilities of exceedance down to 10\ :sup:`—2`. For lower
 probabilities a stochastic event set with longer duration is
 required.
 
 .. figure:: _images/hazard_curves.png
 
-   **Figure 6.6** – *Hazard curves for Seattle using the
+   *Hazard curves for Seattle using the
    Classical and Event-based approaches.*
 
 Disaggregation analysis
@@ -186,11 +186,10 @@ Disaggregation analysis
 We present here an example of disaggregation analysis for the city of
 Seattle, again considering the 2008 national seismic hazard model for
 U.S. developed by Petersen et al. (2008). In
-particular, we show the geographic-magnitude (Figure
-6.7) and geographic-tectonic region type (Figure
-6.8) disaggregation histograms for PGA
-corresponding to 10% probability of exceedance in 50 years. The
-geographic disaggregation allows investigating the spatial
+particular, we show the geographic-magnitude (the first figure below) 
+and geographic-tectonic region type (the second figure below) disaggregation 
+histograms for PGA corresponding to 10% probability of exceedance in 50 years. 
+The geographic disaggregation allows investigating the spatial
 distribution of the seismic sources contributing to a given level of
 hazard. By including magnitude and tectonic region type, we can
 understand the influence of the different tectonic regions, and also
@@ -204,12 +203,12 @@ associated to the lowest contributions.
 
 .. figure:: _images/disagg_10poe50.png
   
-   **Figure 6.7** – *Longitude, latitude and magnitude
+   *Longitude, latitude and magnitude
    disaggregation for PGA corresponding to 10% probability of exceedance
    in 50 years.*
 
 .. figure:: _images/disagg_tectonic_region.png
 
-   **Figure 6.8** – *Longitude, latitude and tectonic region
+   *Longitude, latitude and tectonic region
    type disaggregation for PGA corresponding to 10% probability of
    exceedance in 50 years.*

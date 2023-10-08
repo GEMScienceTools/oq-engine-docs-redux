@@ -1,3 +1,5 @@
+.. _logic-trees:
+
 Logic Trees
 ===========
 
@@ -33,13 +35,13 @@ Below we provide a simple schema illustrating the skeleton of xml file containin
 
 As it appears from this example, the structure of a logic tree is a set of nested elements.
 
-A schematic representation of the elemental components of a logic tree structure is provided in :ref:`Fig. 3.1 <Fig. 3.1>`. 
+A schematic representation of the elemental components of a logic tree structure is provided in :ref:`the figure below <generic-logic-tree>`. 
 A Branch set identifies a collection of branches (i.e. individual branches) whose weights sum to 1.
 
-.. _Fig. 3.1:
+.. _generic-logic-tree:
 .. figure:: _images/GenericLogicTreeStructure.png
 
-   Figure 3.1 Generic Logic Tree structure as described in terms of Branch sets, and individual branches.
+   Generic Logic Tree structure as described in terms of Branch sets, and individual branches.
 
 .. _logic-trees-nrml:
 
@@ -125,8 +127,8 @@ associated to the ``uncertaintyModel``)::
 Depending on the ``uncertaintyType`` the content of the ``<uncertaintyModel>`` element changes:
 
 - if ``uncertaintyType="gmpeModel"``, the uncertainty model contains the name of a ground motion prediction equation 
-  (a list of available GMPEs can be obtained using ``oq info gsims`` and these are also documented at: 
-  **REVISIT FOR CROSS REFERENCE**)::
+  (a list of available GMPEs can be obtained using ``oq info gsims`` and these are also documented 
+  `here <https://docs.openquake.org/oq-engine/reference/master/openquake.hazardlib.gsim.html>`_)::
 
 	<uncertaintyModel>GMPE_NAME</uncertaintyModel>
 

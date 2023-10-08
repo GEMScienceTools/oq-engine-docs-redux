@@ -48,9 +48,6 @@ source code for seismic hazard and physical risk calculations.
    event-based-risk-calculator
    classical-psha-risk-calculator
    retrofitting-benefit-cost-ratio
-   bibliography
-   glossary
-   acronyms
 
 
 .. _appendices:

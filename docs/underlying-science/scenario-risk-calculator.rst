@@ -125,12 +125,11 @@ the following manner:
    ground-up loss is further reduced by this amount. If the deductible
    is above the ground-up loss, then the insured loss is null.
 
-   This process is clarified in Figure 4.1.
+   This process is clarified in the figure below.
 
 .. figure:: _images/insured_loss_estimate.png
 
-   Figure 4.1 – *Representation of the process to estimate the insured
-   losses.*
+   *Representation of the process to estimate the insured losses.*
 
 In Case A, the ground-up loss does not exceed the deductible, which
 leads to an insured loss equal to zero. In Case B, the ground-up loss
@@ -155,7 +154,7 @@ deviation of total loss) and ground-up and insured loss maps. Loss
 maps are comprised by a set of loss nodes, which are associated with
 a pair of coordinates. For each node, one or more loss values might
 exist, due to the fact that several different *assets* can be located
-at the same location. Figure 4.2 presents an example of a loss map
+at the same location. The figure below presents an example of a loss map
 containing the expected economic losses for residental buildings
 located in Nepal, considering a rupture of magnitude 7.0Mw in the
 central part of the country.
@@ -163,5 +162,5 @@ central part of the country.
 
 .. figure:: _images/nepal.png
 
-   Figure 4.2 – *Loss map with the distribution of mean economic losses
+   *Loss map with the distribution of mean economic losses
    for residential buildings in Nepal.*

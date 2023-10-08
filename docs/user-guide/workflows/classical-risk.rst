@@ -18,12 +18,12 @@ The hazard curves required for this calculator can be calculated by the OpenQuak
 *Exposure Model* using the classical PSHA approach (Cornell 1968; McGuire 1976).
 
 The required input files required for running a classical probabilistic damage calculation and the resulting output 
-files are depicted in :ref:`Fig. 2.3 <Fig. 2.3>`.
+files are depicted in :ref:`the figure below. <classical-psha-calc>`
 
-.. _Fig. 2.3:
+.. _classical-psha-calc:
 .. figure:: _images/io-structure-classical-damage.png
 
-   Fig. 2.3 Classical PSHA-based Damage Calculator input/output structure.
+   Classical PSHA-based Damage Calculator input/output structure.
 
 Classical Probabilistic Seismic Risk Analysis
 ---------------------------------------------
@@ -50,9 +50,9 @@ the Exposure Model) can not be extracted using this calculator, as the correlati
 vulnerability uncertainty is not taken into consideration.
 
 The required input files required for running a classical probabilistic risk calculation and the resulting output files 
-are depicted in :ref:`Fig. 2.4 <Fig. 2.4>`.
+are depicted in :ref:`the figure below. <classical-risk-calc>`
 
-.. _Fig. 2.4:
+.. _classical-risk-calc:
 .. figure:: _images/io-structure-classical-risk.png
 
-   Fig. 2.4 Classical PSHA-based Risk Calculator input/output structure.
+   Classical PSHA-based Risk Calculator input/output structure.

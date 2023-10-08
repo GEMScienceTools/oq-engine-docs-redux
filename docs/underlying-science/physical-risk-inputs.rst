@@ -111,12 +111,12 @@ functions* are described by a list of intensity measure levels and
 corresponding mean loss ratios (the ratio of mean loss to exposed
 value), associated coefficients of variation and probability
 distributions. The uncertainty on the loss ratio can follow a
-lognormal or Beta distribution. Figure 3.1 illustrates a discrete
+lognormal or Beta distribution. The figure below illustrates a discrete
 *vulnerability function*.
 
 .. figure:: _images/discrete_vuln_func.png
 
-  Figure 3.1 – *Discrete vulnerability function.*
+  *Discrete vulnerability function.*
 
 Continuous Vulnerability Functions
 **********************************
@@ -124,7 +124,7 @@ Continuous Vulnerability Functions
 Continuous *vulnerability functions* may be implemented in future
 versions of the OpenQuake Continuous engine. Continuous *vulnerability functions* 
 will probably be described by continuous distribu- tions of mean loss ratio and 
-other fractiles of loss ratio, with ground motion intensity. Figure 3.2 
+other fractiles of loss ratio, with ground motion intensity. The figure below 
 illustrates this type of function, showing the distribution of mean loss and the 
 10 percent and 90 percent fractiles.
 
@@ -152,21 +152,21 @@ currently does not support non-linear static methods.
 
 .. figure:: _images/continuous_vuln_func.png
 
-     Figure 3.2 – *Continuous vulnerability function.*
+   *Continuous vulnerability function.*
 
 Discrete Fragility Functions
 ****************************
 
 *Fragility functions* can be defined in a discrete way by providing,
 for each limit state, a list of intensity measure levels and
-respective probabilities of exceedance. Figure 3.3 presents a set of
+respective probabilities of exceedance. The first figure below presents a set of
 discrete *fragility functions* using a macroseismic intensity measure.
 
 Continuous Fragility Functions
 ******************************
 
 Continuous *fragility functions* are defined by the parameters of a
-cumulative distribution function. In Figure 3.4 an example of a set
+cumulative distribution function. In the second figure below an example of a set
 of continuous fragility functions with a structure- dependent
 intensity measure is presented.
 
@@ -174,7 +174,7 @@ Uncertainty in Fragility Functions
 **********************************
 
 The uncertainty in continuous *fragility functions* will be accounted
-for in future versions of the engine. Figure 3.5 shows a lognormal
+for in future versions of the engine. The third figure below shows a lognormal
 distribution that has been fit to the data (i.e. the
 fragility function), and the probabilistic distribution (i.e. mean
 and standard deviation) to describe the uncertainty in both the
@@ -186,11 +186,11 @@ deviations of each limit state.
 
 .. figure:: _images/discrete_frag_func.png
 
-  Figure 3.3 – *Set of discrete fragility functions.*
+   *Set of discrete fragility functions.*
 
 .. figure:: _images/continuous_frag_func.png
 
-   Figure 3.4 – *Set of continuous fragility functions.*
+   *Set of continuous fragility functions.*
 
 Consequence Functions
 ~~~~~~~~~~~~~~~~~~~~~
@@ -199,7 +199,7 @@ Consequence Functions
 given a performance level. For example, if the asset category is buildings 
 and the performance level is significant damage, the *consequence function*
 will describe the mean loss ratio, coefficient of variation and
-probability distribution for that level of damage. Figure 3.6
+probability distribution for that level of damage. The second figure below
 presents the mean damage ratios for a set of performance levels
 proposed by two different sources. Although these functions are not directly 
 supported, users can combine *consequence functions* with *fragility functions* to 
@@ -207,8 +207,8 @@ produce *vulnerability functions* to be input into the engine.
 
 .. figure:: _images/uncertainty_cont_frag.png
 
-  Figure 3.5 – *Uncertainty of continuous fragility functions.*
+  *Uncertainty of continuous fragility functions.*
 
 .. figure:: _images/bal_cons_func.png
 
-   Figure 3.6 – *Consequence functions adapted from Bal et al. [2010]*
+   *Consequence functions adapted from Bal et al. [2010]*

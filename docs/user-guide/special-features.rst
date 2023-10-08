@@ -1,3 +1,5 @@
+.. _special-features:
+
 Special Features of the Engine
 ==============================
 

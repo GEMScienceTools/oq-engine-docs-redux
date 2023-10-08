@@ -11,7 +11,7 @@ hazard.
 
 The definition of logic trees in the OpenQuake engine is based on the
 combination of a number of predefined modules, each one modelling a
-specific epistemic uncertainty (see Figure 5.1
+specific epistemic uncertainty (see the figure below
 for a schematic describing this particular feature). This approach
 brings a number of advantages. The first and most obvious is that the
 user is not forced to use a predefined logic tree structure and -
@@ -63,7 +63,7 @@ of a specific model uncertainty, knowledge that cannot be assumed *a priori*.
 
 .. figure:: _images/modular_logic_tree_structure.png
 
-   **Figure 5.1** – *An example of modular logic tree structure
+   *An example of modular logic tree structure
    supported by the OpenQuake engine. The upper part of the figure contains two
    modules, one modeling the epistemic uncertainty on the dip angle of a
    fault, the other modeling the uncertainty on faults upper seismogenic
@@ -74,7 +74,7 @@ The OpenQuake engine logic-tree structure
 
 The OpenQuake engine offers a flexible and modular methodology to create
 customised logic-tree structures. The main components of this
-structure are (see for example Figure 5.1):
+structure are (see for example the figure above):
 
 - *branch*
 
@@ -159,9 +159,7 @@ At the present time the OpenQuake engine provides a limited set of modules
 describing a specific epistemic uncertainty related to the creation
 of the seismic source model. A short description of each module is
 provided below. Note that the rules defined by each branch set are
-applied to the sources in the input model matching one of the filters
-specified within section
-5.2. If a branch set
+applied to the sources in the input model matching one of the filters. If a branch set
 has not a filter, then the associated epistemic uncertainty will be
 applied to all the sources included in the seismic source model.
 
@@ -200,7 +198,7 @@ applied to all the sources included in the seismic source model.
 
 .. figure:: _images/branch_set_example.png
 
-   **Figure 5.2** – *(upper panel) Example of branch sets belonging to
+   *(upper panel) Example of branch sets belonging to
    the ground-motion logic tree. (lower panel) Example of ground-motion
    logic tree processing. The initial seismic source model, on the left,
    is propagated through a simple logic tree structure following the
@@ -227,7 +225,7 @@ following:
   This module assigns to each tectonic region one or many GSIMs. This
   branch set implicitly contains a filter since it is applied only to
   the seismic sources belonging to the corresponding tectonic region.
-  The example within Figure 5.2 illustrates the
+  The example within the figure above illustrates the
   common processing of the ground-motion logic tree operated by the
   OpenQuake engine. In this example the source model contains seismic sources
   included in two tectonic domains: active tectonics and stable
@@ -258,7 +256,7 @@ two methodologies as implemented in the OpenQuake engine.
 
 .. figure:: _images/logic_tree_full_path.png
 
-   **Figure 5.3** – *Logic tree full path enumeration processing. Note
+   *Logic tree full path enumeration processing. Note
    that the first branching level, the one dealing with the definition
    of the initial seismic source model is neglected since we assume
    there is no epistemic uncertainty associated with its definition. The
@@ -273,10 +271,10 @@ Full-path enumeration is the simplest methodology implemented in the
 OpenQuake engine for logic-tree processing. As previously anticipated, it
 consists of computing hazard for the entire set of investigated sites
 using all the possible paths admitted by the specific logic tree
-structure defined. Let’s consider the example described in Figure
-5.3. to illustrate how this method operates.
+structure defined. Let’s consider the example described in the figure 
+above to illustrate how this method operates.
 
-The logic structure depicted in this Figure contains two branching
+The logic structure depicted in this figure contains two branching
 levels each one including a single branch set. Note that for the sake
 of simplicity and clarity we assume that the first branching level
 (i.e. the one used to define the initial seismic source model) is not
@@ -296,12 +294,12 @@ Monte Carlo sampling
 The Monte Carlo sampling of the logic tree is implemented in a simple
 and straightforward way. Given a branch set, following the same order
 used to add the branches we create a cumulative distribution function
-like the one represented by the red bars in Figure
-5.4. A sample model is then obtained from this
+like the one represented by the red bars in the figure below.
+A sample model is then obtained from this
 distribution simply via the generation of a random number (i.e. a
 real number in the interval [0.0, 1.0]) and the identification of the
-interval in the cumulative distribution which includes it. In Figure
-5.4 the endpoints of the intervals are
+interval in the cumulative distribution which includes it. In the figure below
+the endpoints of the intervals are
 represented with horizontal dashed segments. Let’s assume for example
 that the random number generator gives a value equal to 0.6. As
 clearly visible on the y-axis, this value falls within the interval
@@ -317,7 +315,7 @@ each branching level.
 
 .. figure:: _images/list_of_branches.png
 
-   **Figure 5.4** – *On the x-axis an hypothetical list of branches
+   *On the x-axis an hypothetical list of branches
    included in a branch set. The height of the blue bar is proportional
    to the corresponding weight. The red bars show the cumulative
    distribution function.*

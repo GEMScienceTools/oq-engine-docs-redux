@@ -13,6 +13,8 @@ Instructive YouTube video for the installation procedure:
 .. youtube:: J46boursIRc
    :align: center
 
+.. _hardware-requirements:
+
 Hardware requirements
 ---------------------
 
@@ -39,13 +41,13 @@ Then follow the wizard on screen.
 
 **On MacOS or Linux**
 
-See instructions for the `universal installer <https://github.com/gem/oq-engine/blob/master/doc/installing/universal.md>`_ script, 
+See instructions for the :ref:`universal installer <universal_installer>` script, 
 and consider the specific LTS to be installed.
 
 Installing the latest version
 -----------------------------
 
-See instructions for the `universal installer <https://github.com/gem/oq-engine/blob/master/doc/installing/universal.md>`_ script. 
+See instructions for the :ref:`universal installer <universal_installer>` script. 
 This script works for Linux, macOS and Windows, on laptops, workstations, standalone servers and multi-node clusters.
 
 Changing the OpenQuake Engine version
@@ -53,7 +55,7 @@ Changing the OpenQuake Engine version
 
 To change the version of the engine, make sure to uninstall the current version, before installing a new version.
 
-- `Uninstalling the engine <https://github.com/gem/oq-engine/blob/master/doc/installing/universal.md#uninstalling-the-engine>`_
+- :ref:`Uninstalling the engine <uninstalling_the_engine>`
 - `Installing a specific engine version <https://github.com/gem/oq-engine/blob/master/doc/installing/universal.md##installing-a-specific-engine-version>`_
 
 Other installation methods
@@ -84,7 +86,7 @@ and for Mac and Python 3.8, it would be::
 Cloud
 -----
 
-A set of `Docker containers <https://github.com/gem/oq-engine/blob/master/doc/installing/docker.md>`_ for installing the engine in the cloud.
+A set of :ref:`Docker containers <docker>` for installing the engine in the cloud.
 
 Getting help
 ------------
