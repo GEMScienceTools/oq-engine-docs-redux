@@ -122,9 +122,10 @@ jobs:
           MULTI_DOCS_FOR_DEVEL: "true"
         run: |
           bash --version
-          LTS_VER=$(grep '^Current LTS' README.md  | sed 's/.*OpenQuake Engine //g;s/\*\*.*//g')
-          ENG_VER=$(python3 -c "import openquake.baselib as m; print(m.__version__.rpartition('.')[0])")
-
+          #          LTS_VER=$(grep '^Current LTS' README.md  | sed 's/.*OpenQuake Engine //g;s/\*\*.*//g')
+          LTS_VER="TODO"
+          # ENG_VER=$(python3 -c "import openquake.baselib as m; print(m.__version__.rpartition('.')[0])")
+          ENG_VER="TODO"
           if [ -z "$BUILD" ]; then
               if [[ "$GITHUB_REF_NAME" == "master" || "$GITHUB_REF_NAME" == "moster" ]]; then
                   BUILD=master
@@ -152,7 +153,8 @@ jobs:
 
           REL_VERS="$(git ls-remote --heads | grep -v '^From' | grep '/engine-' | sed 's/^.*ngine-//g' | sort -t. -k 1,1n -k 2,2n -k 3,3n -k 4,4n)"
           LATEST_VER="$(echo "$REL_VERS" | tail -n 1)"
-          ALL_VERS="$((git ls-remote --heads | grep -v '^From' | grep '/engine-' | sed 's/^.*ngine-//g' ; echo "$ENG_VER") | sort -t. -k 1,1n -k 2,2n -k 3,3n -k 4,4n | uniq)"
+          # ALL_VERS="$((git ls-remote --heads | grep -v '^From' | grep '/engine-' | sed 's/^.*ngine-//g' ; echo "$ENG_VER") | sort -t. -k 1,1n -k 2,2n -k 3,3n -k 4,4n | uniq)"
+          ALL_VERS="TODO"
           PDFDOCS="manuals/"
           TARGET_LINK=""
           PDF_VER_LINK=""
