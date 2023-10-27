@@ -326,7 +326,7 @@ jobs:
 
 
           echo "Uploading New OpenQuake Documentation (HTML)"
-          rsync -s -e 'ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null' -ax --delete build/html/ "docs@docs.openquake.org:/var/www/docs.openquake.org/${DOCS_BASE}${TARGET}manual/"
+          rsync -s -e 'ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null' -ax --delete _build/html/ "docs@docs.openquake.org:/var/www/docs.openquake.org/${DOCS_BASE}${TARGET}manual/"
           echo "------"
 
 
