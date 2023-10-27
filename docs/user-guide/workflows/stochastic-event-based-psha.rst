@@ -40,6 +40,8 @@ The main calculators used to perform this analysis are:
 
    This procedure is computationally intensive and is not recommended for investigating the hazard over large areas.
 
+.. _rupture-sampling-how-does-it-work:
+
 Rupture sampling: how does it work?
 -----------------------------------
 

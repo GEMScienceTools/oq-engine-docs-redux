@@ -9,7 +9,8 @@ Exporting the outputs from the Ground Motion Fields in the csv format results in
 example files in the following tables. The sites csv file provides the association between the site ids in the Ground 
 Motion Fields csv file with their latitude and longitude coordinates.
 
-Example of a ground motion fields csv output file for a scenario
+.. _gmf-csv:
+.. table:: Example of a ground motion fields csv output file for a scenario
 
 +----------+---------+---------+-------------+-----------------+-----------------+
 | **rlzi** | **sid** | **eid** | **gmv_PGA** | **gmv_SA(0.3)** | **gmv_SA(1.0)** |
@@ -36,7 +37,8 @@ column go from 0–99. There are seven sites with indices 0–6 (’sid’) whic
 the 100 simulations of the event and for each of the two GMPEs. Finally, the subsequent columns list the ground motion 
 values for each of the intensity measure types specified in the job configuration file.
 
-Example of a sites csv output file for a scenario
+.. _sites-csv:
+.. table:: Example of a sites csv output file for a scenario
 
 +-------------+------------+----------+
 | **site_id** | **lon**    | **lat**  |

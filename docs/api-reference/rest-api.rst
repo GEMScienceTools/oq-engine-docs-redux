@@ -1,3 +1,5 @@
+.. _rest-api:
+
 OpenQuake Engine Server REST API
 ================================
 

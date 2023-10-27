@@ -46,12 +46,12 @@ damage distributions at the asset-level can be obtained from the event damage ta
 curves can be computed.
 
 The required input files required for running a probabilistic stochastic event-based damage calculation and the 
-resulting output files are depicted in :ref:`Fig. 2.5 <Fig. 2.5>`.
+resulting output files are depicted in :ref:`the figure below. <event-based-damage-calc>`
 
-.. _Fig. 2.5:
+.. _event-based-damage-calc:
 .. figure:: _images/io-structure-event-based-damage.png
 
-   Fig. 2.5 Probabilistic Event-based Damage Calculator input/output structure.
+   Probabilistic Event-based Damage Calculator input/output structure.
 
 Similar to the scenario damage calculator, *Consequence Model* files can also be provided as inputs for an event-based 
 damage calculation in addition to fragility models files, in order to estimate consequences based on the calculated 
@@ -107,12 +107,12 @@ provided probabilistic *Vulnerability Model*, taking into consideration the corr
 different assets of a given taxonomy. Finally loss exceedance curves are computed for ground-up losses.
 
 The required input files required for running a probabilistic stochastic event-based risk calculation and the resulting 
-output files are depicted in :ref:`Fig. 2.6 <Fig. 2.6>`.
+output files are depicted in :ref:`the figure below. <event-based-risk-calc>`
 
-.. _Fig. 2.6:
+.. _event-based-risk-calc:
 .. figure:: _images/io-structure-event-based-risk.png
 
-   Fig. 2.6 Probabilistic Event-based Risk Calculator input/output structure.
+   Probabilistic Event-based Risk Calculator input/output structure.
 
 Aggregating by multiple tags
 ----------------------------

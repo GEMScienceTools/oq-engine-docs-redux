@@ -1,16 +1,17 @@
+(universal_installer)=
+
 # Universal installation script
 
 Since version 3.11 of the OpenQuake-engine, there is a universal installation script that works on any platform, provided you have a suitable Python installed.
 The script allows the user to select between different kinds of installations:
 
-1. [`user` installation](#user-installation) (Windows, macOS, and Linux)
-2. [`devel` installation](#devel-installation) (Windows, macOS, and Linux)
-3. [`server` installation](#server-installation) (only available for Linux)
-4. [`devel_server` installation](#devel_server-installation) (only available for Linux)
+1. [`user` installation](user-installation) (Windows, macOS, and Linux)
+2. [`devel` installation](devel-installation) (Windows, macOS, and Linux)
+3. [`server` installation](server-installation) (only available for Linux)
+4. [`devel_server` installation](devel_server-installation) (only available for Linux)
 
 
 >**NOTES:**
-
 >_**Note 1.** On some Linux distributions (e.g. Ubuntu) you may need to install the package `python3-venv` before running the installer_
 > <br />
 >_**Note 2.** New Macs with the M1 CPU are supported only if you're on macOS 12.x and for python3.9.
@@ -29,6 +30,8 @@ After installing, you can get the location of the engine virtual enviroment with
 ```
 $ oq info venv
 ```
+
+(user-installation)=
 
 ## `user` installation
 
@@ -49,7 +52,7 @@ C:\>python.exe install.py user
 
 **on macOS:**
 
-_*Note 1*: Make sure to run the script located under /Applications/Python 3.X/Install Certificates.command, after Python has been installed, to update the SSL certificates bundle see [see FAQ](../faq.md#certificate-verification-on-macOS)._
+_*Note 1*: Make sure to run the script located under /Applications/Python 3.X/Install Certificates.command, after Python has been installed, to update the SSL certificates bundle see [see FAQ](certificate-verification-on-macOS)._
 ```
 $ curl -O https://raw.githubusercontent.com/gem/oq-engine/master/install.py
 $ python3.9 install.py user
@@ -91,7 +94,7 @@ $HOME/openquake/bin/oq
 
 Calculation data will be stored in `$HOME/oqdata`.
 
-
+(devel-installation)=
 
 ## `devel` installation
 
@@ -119,7 +122,7 @@ $ git --version
 ```
 If you don’t have `git` installed already, macOS will prompt you to install it through the Xcode Command Line Tools; simply follow the instructions.
 
-_*Note 1*: Make sure to run the script located under /Applications/Python 3.X/Install Certificates.command, after Python has been installed, to update the SSL certificates bundle see [see FAQ](../faq.md#certificate-verification-on-macOS)._
+_*Note 1*: Make sure to run the script located under /Applications/Python 3.X/Install Certificates.command, after Python has been installed, to update the SSL certificates bundle see [see FAQ](certificate-verification-on-macOS)._
 ```
 $ git clone https://github.com/gem/oq-engine.git
 $ cd oq-engine
@@ -150,6 +153,7 @@ $ source $HOME/openquake/bin/activate
 
 It should now be possible to develop with the engine. Calculation data will be stored in `$HOME/oqdata`.
 
+(server-installation)=
 
 ## `server` installation
 
@@ -178,6 +182,7 @@ preserve some configuration (like the [zworkers] section which is needed
 on a cluster) you should keep a copy of `/etc/openquake/openquake.cfg`
 and move it inside `/opt/openquake` once the new installation is finished.
 
+(devel_server-installation)=
 
 ## `devel_server` installation
 
@@ -204,6 +209,8 @@ If for some reason you want to use an older version you can specify the version 
 ```
 $ python3 install.py user --version=3.10
 ```
+
+(uninstalling_the_engine)=
 
 ## Uninstalling the engine
 

@@ -1,3 +1,5 @@
+(rhel)=
+
 # Installing the OpenQuake Engine on RedHat Linux and its clones
 
 <a href="https://copr.fedorainfracloud.org/coprs/gem/openquake-stable/package/python3-oq-engine/"><img src="https://copr.fedorainfracloud.org/coprs/gem/openquake-stable/package/python3-oq-engine/status_image/last_build.png" /></a>
@@ -32,7 +34,7 @@ curl -sL https://copr.fedoraproject.org/coprs/gem/openquake-stable/repo/epel-7/g
 ```
 ## Install packages from the OpenQuake repository
 
-Before upgrading to a newer version of OpenQuake Engine, you must uninstall the current installed version [Uninstall the OpenQuake Engine](rhel.md#uninstall-the-openquake-engine)
+Before upgrading to a newer version of OpenQuake Engine, you must uninstall the current installed version [Uninstall the OpenQuake Engine](uninstall-the-openquake-engine)
 
 Then to install the OpenQuake Engine and its libraries run
 ```bash
@@ -65,11 +67,13 @@ sudo systemctl status openquake-dbserver.service
 
 ## Run the OpenQuake Engine
 
-Continue on [How to run the OpenQuake Engine](../running/unix.md)
+Continue on [How to run the OpenQuake Engine](unix)
 
 ## Test the installation
 
-To run the OpenQuake Engine tests see the **[testing](../testing.md)** page.
+To run the OpenQuake Engine tests see the **[testing](https://github.com/gem/oq-engine/blob/master/doc/testing.md)** page.
+
+(uninstall-the-openquake-engine)=
 
 ## Uninstall the OpenQuake Engine
 

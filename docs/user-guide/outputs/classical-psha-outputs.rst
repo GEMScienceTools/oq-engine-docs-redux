@@ -5,9 +5,9 @@ By default, the classical PSHA calculator computes and stores hazard curves for 
 
 When the PSHA input model doesn’t contain epistemic uncertainties the results is a set of hazard curves (one for each 
 investigated site). The command below illustrates how is possible to retrieve the group of hazard curves obtained for 
-a calculation with a given identifier ``<calc_id>`` (see Section `Exporting results from a hazard calculation <https://docs.openquake.org/oq-engine/master/manual/hazard.html#sec-exporting-hazard-results>`_
+a calculation with a given identifier ``<calc_id>`` (see Section :ref:`Exporting results from a hazard calculation <export-hazard-results>`_
 for an explanation about how to obtain the list of calculations performed with their corresponding ID)::
-
+	
 	user@ubuntu:~$ oq engine --lo <calc_id>
 	id | name
 	*3 | Hazard Curves

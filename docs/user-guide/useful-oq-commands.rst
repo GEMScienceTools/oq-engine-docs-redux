@@ -1,3 +1,5 @@
+.. _useful-oq-commands:
+
 Useful OpenQuake Commands
 =========================
 

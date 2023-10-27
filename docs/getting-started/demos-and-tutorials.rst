@@ -132,43 +132,43 @@ exceedance::
 Hazard maps (for PGA, 10% in 50 years) for the different demos using various oq-engine source typologies are shown in the 
 figures below:
 
-.. _point:
+.. _Fig. 1.1:
 .. figure:: _images/point.png
 
-   Point Source (a).
+   Fig. 1.1 Point Source (a).
 
-.. _area:
+.. _Fig. 1.2:
 .. figure:: _images/area.png
 
-   Area source (b). The solid black line represents the area boundary.
+   Fig. 1.2 Area source (b). The solid black line represents the area boundary.
 
-.. _simple_fault:
+.. _Fig. 1.3:
 .. figure:: _images/simple_fault.png
 
-   Simple Fault Source (c). The dashed line represents the fault trace, while the solid line the fault surface projection.
+   Fig. 1.3 Simple Fault Source (c). The dashed line represents the fault trace, while the solid line the fault surface projection.
 
-.. _simple_fault1:
+.. _Fig. 1.4:
 .. figure:: _images/simple_fault1.png
 
-   Complex Fault Source (d). The solid line represent the fault surface projection
+   Fig. 1.4 (d) Complex Fault Source. The solid line represent the fault surface projection
 
 Hazard maps (for PGA, 10% in 50 years) as obtained from characteristic fault sources with simple fault geometry (a), 
 complex fault geometry (b), and collection of planar surfaces (c)
 
-.. _char_fault2:
+.. _Fig. 1.5:
 .. figure:: _images/char_fault2.png
 
-   Characteristic fault source with simple fault geometry
+   Fig. 1.5 characteristic fault source with simple fault geometry
 
-.. _char_fault3:
+.. _Fig. 1.6:
 .. figure:: _images/char_fault3.png
 
-   Characteristic fault source with complex fault geometry
+   Fig. 1.6 characteristic fault source with complex fault geometry
 
-.. _char_fault1:
+.. _Fig. 1.7:
 .. figure:: _images/char_fault1.png
 
-   Characteristic fault source with collection of planar surfaces
+   Fig. 1.7 characteristic fault source with collection of planar surfaces
 
 ###########################################
 Classical PSHA with non trivial logic trees
@@ -360,12 +360,12 @@ It is important to notice that each *Branch* set is applied to a specific source
 followed by the source ID. The GSIM logic tree file is the same as used for LogicTreeCase1ClassicalPSHA. By setting in 
 the configuration file ``number_of_logic_tree_samples = 0``, hazard results are obtained for 324 paths (1 source model x 
 3 (a, b) pairs for source 1 x 3 (a, b) pairs for source 2 x 3 max magnitude values for source 1 x 3 max magnitude values 
-for source 2 x 2 GMPEs for Active Shallow Crust X 2 GMPEs for Stable Continental Crust), see :ref:`the figure below <hazard-curves-ltcase2>`.
+for source 2 x 2 GMPEs for Active Shallow Crust X 2 GMPEs for Stable Continental Crust), see :ref:`Fig. 1.8 <Fig. 1.8>`.
 
-.. _hazard-curves-ltcase2:
+.. _Fig. 1.8:
 .. figure:: _images/hazard-curves-ltcase2.png
    
-    Hazard curves as obtained from the LogicTreeCase2 demo. Solid gray lines represent individual hazard curves from the different logic tree path (a total of 324 curves). The red dashed line represents the mean hazard curve, while the red dotted lines depict the quantile levels (0.15, 0.5, 0.95).
+    Fig. 1.8 Hazard curves as obtained from the LogicTreeCase2 demo. Solid gray lines represent individual hazard curves from the different logic tree path (a total of 324 curves). The red dashed line represents the mean hazard curve, while the red dotted lines depict the quantile levels (0.15, 0.5, 0.95).
 
 LogicTreeCase3ClassicalPSHA illustrates an example of logic tree defining relative uncertainties on G-R maximum magnitude 
 and b value. A single source model is considered containing two sources belonging to different tectonic region types and 
@@ -533,24 +533,24 @@ A demo showing an example of Event Based PSHA calculation is provided with the f
 	poes = 0.1
 
 The source model consist of one source (area). 100 stochastic event sets are generated (``ses_per_logic_tree_path = 100``) 
-(an example can be seen in :ref:`the figure below <ses>`). Ground motion fields are computed (``ground_motion_fields = true``, :ref:`this figure <gmf-no-corr>` and 
-:ref:`this figure <gmf-corr>`) and also hazard curves from ground motion fields are extracted (``hazard_curves_from_gmfs = true``). The 
+(an example can be seen in :ref:`Fig. 1.9 <Fig. 1.9>`). Ground motion fields are computed (``ground_motion_fields = true``, :ref:`Fig. 1.10 <Fig. 1.10>` and 
+:ref:`Fig 1.11 <Fig. 1.11>`) and also hazard curves from ground motion fields are extracted (``hazard_curves_from_gmfs = true``). The 
 corresponding hazard maps for 0.1 probability are also calculated (``hazard_maps = true``)
 
-.. _ses:
+.. _Fig. 1.9:
 .. figure:: _images/ses.png
 
-  A stochastic event set generated with the event based PSHA demo. The area source defines a nodal plane distribution which distributes events among vertical and dipping (50 degrees) faults with equal weights. Vertical ruptures are then distributed equally in the range 0-180 degrees while the dipping ones in the range 0-360, both with a step of 45 degrees.
+  Fig. 1.9 A stochastic event set generated with the event based PSHA demo. The area source defines a nodal plane distribution which distributes events among vertical and dipping (50 degrees) faults with equal weights. Vertical ruptures are then distributed equally in the range 0-180 degrees while the dipping ones in the range 0-360, both with a step of 45 degrees.
 
-.. _gmf-no-corr:
+.. _Fig. 1.10:
 .. figure:: _images/gmf-no-corr.png
 
-  Ground motion fields (PGA) with no spatial correlation
+  Fig. 1.10 Ground motion fields (PGA) with no spatial correlation
 
-.. _gmf-corr:
+.. _Fig. 1.11:
 .. figure:: _images/gmf-corr.png
 
-  Ground motion fields (PGA) with spatial correlation
+  Fig. 1.11 Ground motion fields (PGA) with spatial correlation
 
 Demonstrative Examples for Risk Module
 --------------------------------------
@@ -585,12 +585,12 @@ The documentation for the **bold** analysis cases is a work in progress. However
 
 These seven demos use Nepal as the region of interest. An example Exposure Model has been developed for this region, 
 comprising 9,063 assets distributed amongst 2,221 locations (due to the existence of more than one asset at the same 
-location). A map with the distribution of the number of buildings throughout Nepal is presented in :ref:`the next figure <exposure-nepal>`.
+location). A map with the distribution of the number of buildings throughout Nepal is presented in :ref:`Fig. 1.12 <Fig. 1.12>`.
 
-.. _exposure-nepal:
+.. _Fig. 1.12:
 .. figure:: _images/exposure-nepal.png
 
-   Distribution of number of buildings in Nepal
+   Fig. 1.12 Distribution of number of buildings in Nepal
 
 The building portfolio was organised into four classes for the rural areas (adobe, dressed stone, unreinforced fired 
 brick, wooden frames), and five classes for the urban areas (the aforementioned typologies, in addition to reinforced 

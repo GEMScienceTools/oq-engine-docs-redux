@@ -30,11 +30,11 @@ Steps of the Calculation
    calculator or the probabilistic event-based risk calculators. Two
    configurations of the vulnerability need to be considered: original
    and retrofitted. Thus, for each *asset*, two loss exccedance curves are
-   determined, as depicted in Figure 8.1.
+   determined, as depicted in the next figure.
 
 .. figure:: _images/vuln_func_retrofitted.png
 
-   Figure 8.1 – *Vulnerability functions for the original and
+   *Vulnerability functions for the original and
    retrofitted configuration of a class of RC buildings (left) and
    respective loss exceedance curves (right).*
 
@@ -63,11 +63,11 @@ Calculator Output
 
 The results of this calculator are stored in a benefit/cost ratio
 map, which includes the :math:`AAL_{retrofitted}`, :math:`AAL_{original}` and the
-resulting :math:`BCR` at each location. In Figure 8.2, a map of
+resulting :math:`BCR` at each location. In the figure below, a map of
 benefit/cost ratios for RC residential buildings in Nepal is
 presented.
 
 .. figure:: _images/retrofit_bcr_nepal.png
 
-   Figure 8.2 – *Retrofitting benefit/cost ratio map for
+   *Retrofitting benefit/cost ratio map for
    residential buildings in Nepal.*

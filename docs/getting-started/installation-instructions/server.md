@@ -1,3 +1,5 @@
+(server)=
+
 # The OpenQuake Engine Server and WebUI
 
 ## Advanced configurations and Authentication support
@@ -65,12 +67,12 @@ STATIC_ROOT = '/var/www/webui'
 
 After the creation of the files, please perform the same steps of the package installation to set up the environment with the user root.
 
-##### Groups support
+#### Groups support
 
 Users can be part of groups. Members of the same group can have access to any calculation and output produced by any member of that group; only the owner of a calculation can delete it.
 
 
-##### Users and groups management
+#### Users and groups management
 
 Users and group can be managed via the Django admin interface, available at `/admin` when `LOCKDOWN` is enabled.
 
@@ -103,7 +105,7 @@ Furthermore, the user `openquake` must own that directory.
 
 On a production system [nginx](http://nginx.org/en/) + [gunicorn](http://gunicorn.org/) is the recommended software stack to run the WebUI.
 
-#### gunicorn
+### gunicorn
 
 *gunicorn* can be installed either via `pip` or via the system packager (`apt`, `yum`, ...). For example:
 
@@ -124,9 +126,9 @@ gunicorn -w N wsgi:application
 
 where `N` is the number of workers, we suggest `N = 4`.
 
-*gunicorn* is usually managed by the OS init system. See an example for [systemd](../../debian/systemd/openquake-webui.service).
+*gunicorn* is usually managed by the OS init system. See an example for [systemd](https://github.com/gem/oq-engine/blob/master/debian/systemd/openquake-webui.service).
 
-#### nginx
+### nginx
 
 *gunicorn* does not serve static content itself thus a frontend like *nginx* is needed.
 
@@ -142,7 +144,7 @@ then collect static files:
 $ sudo oq webui collectstatic
 ```
 
-*nginx* must be configured to act as a reverse proxy for *gunicorn* and to provide static content. A [sample configuration file](examples/nginx.md) is provided.
+*nginx* must be configured to act as a reverse proxy for *gunicorn* and to provide static content. A [sample configuration file](https://github.com/gem/oq-engine/blob/master/doc/installing/examples/nginx.md) is provided.
 
 ***
 

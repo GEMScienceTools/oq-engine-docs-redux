@@ -1,3 +1,5 @@
+.. _running-the-engine:
+
 Running Calculations
 ====================
 
@@ -10,3 +12,5 @@ the command line, the OpenQuake Web UI, or the OpenQuake QGIS plugin.
    command-line
    web-ui
    qgis-plugin
+   unix
+   windows

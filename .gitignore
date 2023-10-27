@@ -72,9 +72,6 @@ instance/
 
 # Sphinx documentation
 docs/_build/
-docs/_images/
-docs/_templates/
-docs/_video_thumbnail/
 
 # PyBuilder
 .pybuilder/

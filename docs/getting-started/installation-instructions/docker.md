@@ -1,3 +1,5 @@
+(docker)=
+
 # Deploying the OpenQuake Engine Docker container
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/7/79/Docker_%28container_engine%29_logo.png" width="150px"> [![Build Status](https://ci.openquake.org/buildStatus/icon?job=builders/docker-builder)](https://ci.openquake.org/job/builders/docker-builder)
@@ -44,8 +46,8 @@ $ docker pull docker.io/openquake/engine:latest
 
 ## Deployment
 
-- [Single node deployment](../docker/single.md)
-- [Advanced options](../docker/advanced.md)
+- [Single node deployment](https://github.com/gem/oq-engine/blob/master/doc/installing/examples/nginx.md)
+- [Advanced options](https://github.com/gem/oq-engine/blob/master/doc/docker/advanced.md)
 
 
 ## Getting help

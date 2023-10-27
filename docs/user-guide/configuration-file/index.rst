@@ -1,4 +1,4 @@
-.. _config-file:
+.. _configuration-file:
 
 Configuration File and Configuration Parameters
 ===============================================

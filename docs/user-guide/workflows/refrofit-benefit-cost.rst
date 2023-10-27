@@ -9,11 +9,12 @@ curves are computed using the previously described Classical PSHA-based Risk cal
 is a benefit/cost ratio for each asset, in which a ratio above one indicates that employing a retrofitting intervention 
 is economically viable.
 
-In Fig. 2.7, the input/output structure for this calculator is depicted.
+In :ref:`the figure below <retrofit-benefit-cost-calc>`, the input/output structure for this calculator is depicted.
 
+.. _retrofit-benefit-cost-calc:
 .. figure:: _images/io-structure-benefit-cost.png
 
-   Fig. 2.7 Retrofitting Benefit/Cost Ratio Calculator input/output structure.
+   Retrofitting Benefit/Cost Ratio Calculator input/output structure.
 
 For further information regarding the theoretical background of the methodologies used for each calculator, users are 
 referred to the OpenQuake engine Book (Risk).

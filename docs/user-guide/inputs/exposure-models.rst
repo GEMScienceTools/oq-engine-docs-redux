@@ -820,10 +820,10 @@ must be listed between the ``<assets>`` and ``</assets>`` xml tags.
 
 In the example shown above, the exposure information is provided in three csv files, Washington.csv, Oregon.csv, and 
 California.csv. To illustrate the format of the csv files, we have shown below the header and first few lines of the 
-file Washington.csv in :ref:`Table 3.2 <Table 3.2>`.
+file Washington.csv in :ref:`the table below <exposure-csv>`.
 
-.. _Table 3.2:
-.. table:: Table 3.2 Example exposure csv file
+.. _exposure-csv:
+.. table:: Example exposure csv file
 
    +----------+------------+----------+---------------+-------------+----------------+----------+---------------+--------------+----------------+
    |  **id**  |   **lon**  |  **lat** | **taxonomy**  |  **number** | **structural** | **area** | **occupancy** |  **state**   |   **county**   |

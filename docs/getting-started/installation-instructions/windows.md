@@ -23,7 +23,7 @@ in the hazard or risk mosaic) we recommend to use a Linux server.
 
 ## Run the OpenQuake Engine
 
-Continue on [How to run the OpenQuake Engine](../running/windows.md)
+Continue on [How to run the OpenQuake Engine](windows)
 
 ***
 

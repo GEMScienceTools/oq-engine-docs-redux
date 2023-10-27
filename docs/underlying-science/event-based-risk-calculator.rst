@@ -124,11 +124,11 @@ To perform the loss disaggregation:
    distance (Joyner- Boore) and coordinates of the point within the
    vertical projection of the rupture plane closest to each site are
    estimated. An example of this type of information is presented in
-   Figure 6.1, for 20 stochastically produced seismic events.
+   the figure below, for 20 stochastically produced seismic events.
 
 .. figure:: _images/single_asset_loss_table.png
 
-   Figure 6.1 – *Economic losses from a single asset for a set of
+   *Economic losses from a single asset for a set of
    seismic events.*
 
 2. The oq-engine calculates the range (maximum and minimum values) of
@@ -138,17 +138,17 @@ To perform the loss disaggregation:
    every seismic event are aggregated depending into which combination
    of magnitude/distance or latitude/longitude they fall. The previously
    presented losses have been disaggregated according to these two
-   combinations as presented in Figure 6.2:
+   combinations as presented in the figure below:
 
 .. figure:: _images/loss_disaggregation.png
 
-   Figure 6.2 – *Disaggregation of the economic losses according to a
+   *Disaggregation of the economic losses according to a
    set of magnitude/distance and latitude/longitude combinations.*
 
 3. The resulting losses for each pair of parameters (magnitude/distance
    and latitude/longitude) are divided by the total loss across all
    the events. This percentage of the overall loss for each combination
-   is depicted in Figure 6.7 in the following section.
+   is depicted in the last figure in the following section.
 
 
 Calculator Output
@@ -162,46 +162,43 @@ curve is associated with a pair of coordinates, an end branch label
 used in the calculations) and an asset ID (that permits tracking of
 the asset that each loss curve was computed for). Loss maps for a
 given probability of exceedance in a given time span can be produced,
-as well as maps of mean loss within a given time span. Figure 6.3 and
-6.4 present a loss map for a probability of exceedance of 1% and 10% in 
+as well as maps of mean loss within a given time span. The next two figures
+present a loss map for a probability of exceedance of 1% and 10% in 
 50 years for residential buildings located in Nepal, respectively.
 
 .. figure:: _images/loss_map_475yr.png
 
-   Figure 6.3 – *Loss map for a probability of exceedance of 10% in 50
-   years.*
+   *Loss map for a probability of exceedance of 10% in 50 years.*
 
 .. figure:: _images/loss_map_1poe50.png
 
-   Figure 6.4 – *Loss map for a probability of exceedance of 1% in 50
-   years.*
+   *Loss map for a probability of exceedance of 1% in 50 years.*
 
 For this calculator, total loss exceedance curves can be produced
 which combine the losses to all assets per event. It is noted that
 loss exceedance curves which present the probability of exceedance of
 the aggregate annual losses, or maximum annual losses, are not yet
-supported in the oq-risklib. In Figure 6.5, a total loss exceedance
+supported in the oq-risklib. In the figure below, a total loss exceedance
 curve for the residential building portfolio in Nepal is presented.
 
 .. figure:: _images/exceedance_rc.png
 
-   Figure 6.5 – *Total loss exceedance curve for RC buildings.*
+   *Total loss exceedance curve for RC buildings.*
 
 For what concerns the *event loss tables*, the oq-engine can extract
 the total loss across all the assets for each seismic event. The
 results is a table with the rupture id, magnitude and total loss, as
-illustrated in Figure 6.6.
+illustrated in the next figure.
 
 .. figure:: _images/event_loss_table.png
 
-   Figure 6.6 – *Example of an event loss table.*
+   *Example of an event loss table.*
 
 The output of the *loss disaggregation* is composed by the loss
 fraction associated to each combination of parameters
-(magnitude/distance or latitude/longitude), as presented in Figure
-6.7.
+(magnitude/distance or latitude/longitude), as presented in the figure below.
 
 .. figure:: _images/loss_disaggregation_plot.png
 
-   Figure 6.7 – *Example of a loss disaggregation according to a set of
+   *Example of a loss disaggregation according to a set of
    magnitude/distance and latitude/longitude combinations.*

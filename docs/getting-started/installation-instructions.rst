@@ -1,6 +1,6 @@
 .. _installing-the-openquake-engine:
 
-Installing the OpenQuake engine
+Installing the OpenQuake Engine
 ===============================
 
 The OpenQuake Engine runs on Linux, macOS and Windows; on laptops, workstations, standalone servers and multi-node 
@@ -12,8 +12,6 @@ Instructive YouTube video for the installation procedure:
 
 .. youtube:: J46boursIRc
    :align: center
-
-.. _hardware-requirements:
 
 Hardware requirements
 ---------------------
@@ -41,13 +39,13 @@ Then follow the wizard on screen.
 
 **On MacOS or Linux**
 
-See instructions for the :ref:`universal installer <universal_installer>` script, 
+See instructions for the `universal installer <https://github.com/gem/oq-engine/blob/master/doc/installing/universal.md>`_ script, 
 and consider the specific LTS to be installed.
 
 Installing the latest version
 -----------------------------
 
-See instructions for the :ref:`universal installer <universal_installer>` script. 
+See instructions for the `universal installer <https://github.com/gem/oq-engine/blob/master/doc/installing/universal.md>`_ script. 
 This script works for Linux, macOS and Windows, on laptops, workstations, standalone servers and multi-node clusters.
 
 Changing the OpenQuake Engine version
@@ -55,7 +53,7 @@ Changing the OpenQuake Engine version
 
 To change the version of the engine, make sure to uninstall the current version, before installing a new version.
 
-- :ref:`Uninstalling the engine <uninstalling_the_engine>`
+- `Uninstalling the engine <https://github.com/gem/oq-engine/blob/master/doc/installing/universal.md#uninstalling-the-engine>`_
 - `Installing a specific engine version <https://github.com/gem/oq-engine/blob/master/doc/installing/universal.md##installing-a-specific-engine-version>`_
 
 Other installation methods
@@ -86,25 +84,10 @@ and for Mac and Python 3.8, it would be::
 Cloud
 -----
 
-A set of :ref:`Docker containers <docker>` for installing the engine in the cloud.
+A set of `Docker containers <https://github.com/gem/oq-engine/blob/master/doc/installing/docker.md>`_ for installing the engine in the cloud.
 
 Getting help
 ------------
 
 If you need help or have questions/comments/feedback for us, you can subscribe to the OpenQuake users mailing list: 
 https://groups.google.com/g/openquake-users
-
-
-.. toctree::
-   :maxdepth: 1
-
-   universal
-   windows
-   ubuntu
-   ubuntu-nightly
-   development
-   cluster
-   rhel
-   server
-   tools
-   docker

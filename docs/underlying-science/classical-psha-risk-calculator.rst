@@ -32,7 +32,7 @@ Calculation Steps
    consecutive levels. Two consecutive values define the boundaries of
    the interval for each intensity measure level and by relating these
    limits with the hazard curve, the engine computes the corresponding
-   probabilities of exceedance. Figure 7.1 contains a discrete
+   probabilities of exceedance. The figure below contains a discrete
    *vulnerability function* (bottom figure) and a hazard curve (top
    figure) in which the definition of the interval for a given intensity
    measure level and associated estimation of the probabilities of
@@ -40,7 +40,7 @@ Calculation Steps
 
 .. figure:: _images/poe_workflow.png
 
-   Figure 7.1 – *Workflow to estimate the probabilities of exceedance of
+   *Workflow to estimate the probabilities of exceedance of
    the boundaries of each intensity measure level.*
 
 3. The probability of occurrence of the intensity measure levels that
@@ -67,7 +67,7 @@ Calculation Steps
    Following a number of sensitivity analyses, it appears that 5
    intermediate values between consecutive loss ratios is a reasonable
    value, however, this is a parameter that can be adjusted by the
-   user. Figure 7.2 contains an example of a discrete *vulnerability
+   user. The next figure contains an example of a discrete *vulnerability
    function* and the respective loss ratio exceedance matrix (in light
    grey).
 
@@ -78,7 +78,7 @@ Calculation Steps
 
 .. figure:: _images/discrete_vuln_func_table.png
 
-   Figure 7.2 – *Example of a discrete vulnerability function and
+   *Example of a discrete vulnerability function and
    respective loss ratio exceedance matrix.*
 
 5. Finally, each column of the aforementioned matrix is multiplied by

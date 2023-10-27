@@ -12,8 +12,7 @@ It depends on your use case and your level of expertise. Most of our users are s
 and/or little support from their IT departments. For them we recommend to buy a very powerful server and not a cluster, 
 which is complex to manage. A server with 256 GB of RAM and 64 real cores is currently powerful enough to run all of the 
 calculations in the GEM global hazard and risk mosaic. If you have larger calculations and IT expertise, for a cluster 
-setup see the `hardware suggestions <https://github.com/gem/oq-engine/blob/master/doc/hardware-suggestions.md>`_ and 
-`cluster <https://github.com/gem/oq-engine/blob/master/doc/installing/cluster.md>`_ pages.
+setup see the :ref:`hardware suggestions <hardware-requirements>` and :ref:`cluster <cluster>` pages.
 
 ****************************************************
 Help! I have a multi-node cluster and I'm in trouble
@@ -118,7 +117,7 @@ Different installation methods
 ******************************
 
 The OpenQuake engine has several installation methods. To choose the one that best fits your needs take a look at the 
-installation overview **LINK**.
+:ref:`installation overview <installing-the-openquake-engine>`.
 
 ###########################
 Supported operating systems
@@ -133,6 +132,8 @@ Binary packages are provided for the following 64bit operating systems::
 - Docker hosts
 
 A 64bit operating system **is required**. Please refer to each OS specific page for details about requirements.
+
+.. _unsupported-operating-systems:
 
 #############################
 Unsupported operating systems
@@ -150,6 +151,8 @@ These configurations however are not tested and we cannot guarantee on the quali
 
 The OpenQuake engine **requires a 64bit operating system**. Starting with version v2.3 of the Engine binary installers 
 and packages aren't provided for 32bit operating systems anymore.
+
+.. _mpi-support:
 
 ###########
 MPI support
@@ -170,8 +173,6 @@ Python 2.7 compatibility
 
 Support for Python 2.7 has been dropped. The last version of the Engine compatible with Python 2.7 is 
 OpenQuake engine version 2.9 (Jeffreys).
-
-**I THINK WE NEED AN UPDATE HERE**
 
 ####################################
 Python scripts that import openquake
@@ -239,7 +240,7 @@ controlling terminal`` error usually means that the SSH connection has dropped o
 closed having a running computation attached to it.
 
 To avoid this error please use ``nohup``, ``screen``, ``tmux`` or ``byobu`` when using ``oq`` via SSH. More information 
-is available on `Running the OpenQuake engine <https://github.com/gem/oq-engine/blob/master/doc/running/unix.md>`_.
+is available on :ref:`Running the OpenQuake engine <unix>`.
 
 ##############
 DbServer ports
@@ -253,7 +254,7 @@ Swap partitions
 ###############
 
 Having a swap partition active on resources fully dedicated to the OpenQuake engine is discouraged. More info 
-`here <https://github.com/gem/oq-engine/blob/master/doc/installing/cluster.md#swap-partitions>`__.
+:ref:`here <cluster>`.
 
 ################################
 System running out of disk space
@@ -269,6 +270,8 @@ changed as follow:
 - ``shared_dir`` must be set to ``/mnt/ext_volume``
 - A ``tmp`` dir must be created in ``/mnt/ext_volume``
 - ``custom_tmp`` must be set to ``/mnt/ext_volume/tmp`` (the directory must exist)
+
+.. _certificate-verification-on-macOS:
 
 #################################
 Certificate verification on macOS
@@ -350,11 +353,7 @@ tuning parameters like the ``pointsource_distance`` and ``ps_grid_spacing``, dis
 How should I interpret the "Realizations" output?
 *************************************************
 
-This is explained in the advanced manual:
-
-https://docs.openquake.org/oq-engine/advanced/logic_trees.html
-
-**UPDATE THIS LATER**
+This is explained in the :ref:`logic trees section <logic-trees>`
 
 ****************************************************************
 How do I export the hazard curves/maps/uhs for each realization?
@@ -402,7 +401,7 @@ What is the relation between sources, ruptures, events and realizations?
 
 A single rupture can produce multiple seismic events during the investigation time. How many depends on the number of 
 stochastic event sets, on the rupture occurrence rate and on the ``ses_seed`` parameters, as explained 
-`here <https://docs.openquake.org/oq-engine/advanced/event_based.html#rupture-sampling-how-does-it-work>`_. In the 
+:ref:`here <rupture-sampling-how-does-it-work>`. In the 
 engine a rupture is uniquely identified by a rupture ID, which is a 32 bit positive integer. Starting from engine v3.7, 
 seismic events are uniquely identified by an event ID, which is a 32 bit positive integer. The relation between event ID 
 and rupture ID is given encoded in the ``events`` table in the datastore, which also contains the realization associated 
@@ -410,8 +409,6 @@ to the event. The properties of the rupture generating the events can be ascerta
 table. In particular ther ``srcidx`` contains the index of the source that generated the rupture. The ``srcidx`` can be 
 used to extract the properties of the sources by looking inside the ``source_info`` table, which contains the ``source_id`` 
 string used in the XML source model.
-
-**UPDATE THE LINK HERE**
 
 ************************************************
 Can I run a calculation from a Jupyter notebook?
@@ -440,8 +437,6 @@ The official way to plot the result of a calculation is to use the `QGIS plugin 
 However you may want a kind of plot which is not available in the plugin, or you may want to batch-produce hundreds of 
 plots, or you may want to plot the results of a postprocessing operation. In such cases you need to use the 
 `extract API <https://github.com/gem/oq-engine/blob/master/doc/extract-api>`_ and to write your own plotting/postprocessing code.
-
-**SECOND LINK DOES NOT WORK**
 
 FAQ about running risk calculations
 -----------------------------------
@@ -613,14 +608,12 @@ FAQ related to cluster deployments
 What it is the proper way to install the engine on a supercomputer cluster?
 ***************************************************************************
 
-Normally a supercomputer cluster cannot be fully assigned to the OpenQuake engine, so you cannot perform the `regular 
-cluster installation <https://github.com/gem/oq-engine/blob/master/doc/installing/cluster.md>`_. We suggest to do the following instead:
+Normally a supercomputer cluster cannot be fully assigned to the OpenQuake engine, so you cannot perform the :ref:`regular 
+cluster installation <cluster>`. We suggest to do the following instead:
 
 - install the engine in server mode on the machine that will host the database and set ``shared_dir=/opt/openquake`` in the openquake.cfg file; such machine can have low specs; optionally, you can run the WebUI there, so that the users can easily download the results
 - expose /opt/openquake to all the machines in the cluster by using a read-write shared filesystem
 - then run the calculations on the other cluster nodes; the outputs will be saved in /opt/openquake/oqdata and the code will be read from /opt/openquake/venv; this will work if all the nodes have a vanilla python installation consistent with the one on the database machine.
-
-**UPDATE THE LINK LATER**
 
 *********************************************
 Recover after a Out Of Memory (OOM) condition
@@ -660,11 +653,11 @@ A more detailed stack trace::
 	  File "h5py/h5f.pyx", line 78, in h5py.h5f.open
 	OSError: Unable to open file (unable to open file: name = '/home/openquake/oqdata/cache_1.hdf5', errno = 2, error message = 'No such file or directory', flags = 0, o_flags = 0)
 
-This happens when the `shared dir <https://github.com/gem/oq-engine/blob/master/doc/installing/cluster.md#shared_filesystem>`_ 
+This happens when the :ref:`shared dir <cluster>` 
 is not configured properly and workers cannot access data from the master node. Please note that starting with OpenQuake 
 engine 3.3 the shared directory is required on multi-node deployments.
 
-You can get more information about setting up the shared directory on the `cluster installation page <https://github.com/gem/oq-engine/blob/master/doc/installing/cluster.md#shared_filesystem>`_.
+You can get more information about setting up the shared directory on the :ref:`cluster installation page <cluster>`.
 
 -------
 

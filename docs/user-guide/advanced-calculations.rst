@@ -1,3 +1,5 @@
+.. _advanced-calculations:
+
 Advanced Calculations
 =====================
 
