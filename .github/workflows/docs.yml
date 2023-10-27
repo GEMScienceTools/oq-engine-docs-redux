@@ -284,8 +284,8 @@ jobs:
           #     ddown_adv="${ddown_adv}]"
           #     echo "$ddown_adv" > dot_ddown_adv.json
           # fi
-          # set +x
-
+          set -x
+          gpg --version
           gpg --quiet --batch --yes --decrypt --passphrase="$DOCS_SSH" --output ./.deploy_rsa ./.deploy_docs.enc
           chmod 600 ./.deploy_rsa
           eval $(ssh-agent -s) && ssh-add ./.deploy_rsa
