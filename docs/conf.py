@@ -26,6 +26,7 @@ html_theme = "pydata_sphinx_theme"
 html_static_path = ["_static"]
 html_favicon = "_static/OQ-Logo circle_shade.png"
 html_theme_options = {
+    "navigation_with_keys": True,
     "show_nav_level": 2,
     "content_footer_items": ["last-updated"],
     "header_links_before_dropdown": 6,
