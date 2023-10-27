@@ -1,4 +1,4 @@
-#  manuals -> master latest e LTS
+#  manuals -> main latest e LTS
 #  dev/<branch>/arch
 #
 #  link a pdf e constraint coi test ok
@@ -8,7 +8,7 @@
 # --------------
 #
 # .oq-engine-new
-#     <x.y>|master
+#     <x.y>|main
 #         PDF
 #             <pdf_docs>
 #         reference
@@ -19,15 +19,15 @@
 #     reference
 #         latest -> ../latest/reference
 #         LTS    -> ../LTS/reference
-#         master -> ../master/reference
+#         main -> ../main/reference
 #     manual
 #         latest -> ../latest/manual
 #         LTS    -> ../LTS/manual
-#         master -> ../master/manual
+#         main -> ../main/manual
 #     advanced
 #         latest -> ../latest/advanced
 #         LTS    -> ../LTS/advanced
-#         master -> ../master/advanced
+#         main -> ../main/advanced
 # manuals
 #     OpenQuake Manual <x.y>.pdf -> ../.oq-engine-new/<x.y>/PDF/OpenQuake Manual <x.y>.pdf
 #     OpenQuake Manual latest.pdf -> OpenQuake Manual <latest_(x.y)>.pdf
@@ -56,11 +56,11 @@ on:
         type: choice
         options:
           - dev
-#          - master
+          - main
 #          - release
 #          - LTS
   push:
-    branches: [master, 'engine-*', moster, 'ongine-*']
+    branches: [main, 'engine-*', moster, 'ongine-*']
 
   pull_request:
 
@@ -127,8 +127,8 @@ jobs:
           # ENG_VER=$(python3 -c "import openquake.baselib as m; print(m.__version__.rpartition('.')[0])")
           ENG_VER="TODO"
           if [ -z "$BUILD" ]; then
-              if [[ "$GITHUB_REF_NAME" == "master" || "$GITHUB_REF_NAME" == "moster" ]]; then
-                  BUILD=master
+              if [[ "$GITHUB_REF_NAME" == "main" || "$GITHUB_REF_NAME" == "moster" ]]; then
+                  BUILD=main
               elif [[ "$GITHUB_REF_NAME" =~ ^engine- || "$GITHUB_REF_NAME" =~ ^ongine- ]]; then
                   BRANCH_VER="${GITHUB_REF_NAME#engine-}"
                   if [ "$BRANCH_VER" == "$GITHUB_REF_NAME" ]; then
@@ -170,9 +170,9 @@ jobs:
               elif [ "$BUILD" == "LTS" ]; then
                   PDF_VER_LINK="LTS"
               fi
-          elif [ "$BUILD" == "master" ]; then
-              TARGET=".oq-engine-new/master/"
-              PDF_VER="(master)"
+          elif [ "$BUILD" == "main" ]; then
+              TARGET=".oq-engine-new/main/"
+              PDF_VER="(main)"
           elif [ "$BUILD" == "dev" ]; then
               DOCS_BASE="${DOCS_BASE}.dev/"
               if echo "$GITHUB_REF_NAME" | grep -q '[0-9]\+/merge'; then
@@ -209,10 +209,10 @@ jobs:
           echo "GITHUB_BS_REF:       [$GITHUB_BS_REF]"
           echo "UPLOAD:              [$UPLOAD]"
 
-          # multi-version doc switcher could be runned just from master because
-          # is the only one known the master version (from sources)
+          # multi-version doc switcher could be runned just from main because
+          # is the only one known the main version (from sources)
           # set -x
-          # if [ "$MULTI_DOCS_FOR_DEVEL" == "true" -o  "$BUILD" == "master" ]; then
+          # if [ "$MULTI_DOCS_FOR_DEVEL" == "true" -o  "$BUILD" == "main" ]; then
           #     ddown_adv="["
           #     ddown_man="["
           #     for v in $ALL_VERS; do
@@ -223,9 +223,9 @@ jobs:
           #         sfx=""
           #         if [ "$v" = "$ENG_VER" ]; then
           #             pfx="development"
-          #             master_rename="true"
+          #             main_rename="true"
           #         else
-          #             master_rename="false"
+          #             main_rename="false"
           #         fi
           #         # if [ "$v" = "$LATEST_VER" ]; then
           #         #     if [ "$sfx" ]; then
@@ -247,9 +247,9 @@ jobs:
 
           #         # policies for the user manual version switcher menu
           #         if ( (( "$ver_maj" == 3  )) && (( "$ver_min" >= 16 )) ) || (( "$ver_maj" > 3 )); then
-          #             if [ "$master_rename" == "true" ]; then
+          #             if [ "$main_rename" == "true" ]; then
           #                 ver_name="${pfx}"
-          #                 ver_val="master"
+          #                 ver_val="main"
           #             else
           #                 ver_name="${ver_maj}.${ver_min}${sfx}"
           #                 ver_val="${ver_maj}.${ver_min}"
@@ -263,9 +263,9 @@ jobs:
 
           #         # policies for the advanced manual version switcher menu
           #         if ( (( "$ver_maj" == 3  )) && (( "$ver_min" >= 16 )) ) || (( "$ver_maj" > 3 )); then
-          #             if [ "$master_rename" == "true" ]; then
+          #             if [ "$main_rename" == "true" ]; then
           #                 ver_name="${pfx}"
-          #                 ver_val="master"
+          #                 ver_val="main"
           #             else
           #                 ver_name="${ver_maj}.${ver_min}${sfx}"
           #                 ver_val="${ver_maj}.${ver_min}"
@@ -325,9 +325,9 @@ jobs:
           # fi
 
 
-          # echo "Uploading OpenQuake Manual (HTML)"
-          # rsync -s -e 'ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null' -ax --delete build/html/ "docs@docs.openquake.org:/var/www/docs.openquake.org/${DOCS_BASE}${TARGET}manual/"
-          # echo "------"
+          echo "Uploading New OpenQuake Documentation (HTML)"
+          rsync -s -e 'ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null' -ax --delete build/html/ "docs@docs.openquake.org:/var/www/docs.openquake.org/${DOCS_BASE}${TARGET}manual/"
+          echo "------"
 
 
           # echo "Make Reference Manual (HTML)"
